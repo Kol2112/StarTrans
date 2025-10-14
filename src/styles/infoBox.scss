@@ -1,0 +1,23 @@
+@use 'Shared';
+.container{
+    background-color: Shared.$secondMainColor;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 1rem;
+    // width: 20%;
+    height: 40vh;
+    img{
+        width: 5em;
+    }
+    p{
+        color:Shared.$darkThemeTextColor;
+        font-family: 'Poppins';
+        text-align: center;
+        font-weight: bold;
+        padding-top: 1rem;
+    }
+}
+

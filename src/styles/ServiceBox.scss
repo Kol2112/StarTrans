@@ -1,0 +1,36 @@
+@use 'Shared';
+.contentBox{
+    text-align: center;
+    background-color: Shared.$secondMainColor;
+    width: 40%;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: (0 0.4rem 60px #000000);
+    img{
+        width: 7rem;
+    }
+    .contentTitle{
+        color:Shared.$darkThemeTextColor;
+        font-family: Shared.$firstFont;
+    }
+    .contentText{
+        color:Shared.$darkThemeTextColor;
+        font-family: Shared.$secondFont;
+        font-weight: 300;
+        margin: 2rem;
+        font-size:large;
+    }
+    button{
+        width: 80%;
+        background-color: Shared.$buttonColor;
+        border-radius: 1rem;
+        border: none;
+        color: Shared.$darkThemeTextColor;
+        margin-top: 2rem;
+        padding: 1rem 5rem;
+        font-size: larger;
+    }
+    button:hover{
+        box-shadow: 0 4px 40px 16px rgba($color: #07931C, $alpha: 0.5);
+    }
+}

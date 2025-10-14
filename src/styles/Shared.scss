@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$darkThemeTextColor: #FFFFFF;
+$firstMainColor: #1D1D1D;
+$secondMainColor: rgba(204, 204, 204, 0.1);
+$firstFont: 'Poppins';
+$secondFont: 'Roboto';
+$buttonColor: #07931C;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1D1D1D;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+#content{
+    margin: 0 5rem;
+}
+.marginContent{
+    margin-top: 2rem;
+}
+.border{
+    border-left: solid 4px #07931C;
+    padding-left: 0.5rem;
+}
+.captionTitle{
+    color: $darkThemeTextColor;
+    font-family: $firstFont;
+}
+.captionDesc{
+    color: $darkThemeTextColor;
+    font-style: italic;
+    font-family: $secondFont;
+}
+
+.box{
+    display: flex;
+    background-color: $secondMainColor;
+    border-radius: 1rem;
+    box-shadow: (0 0.4rem 60px #000000);
+    img{
+        width: 30%;
+        height: 100%;
+        border-radius: 1rem 0 0 1rem;
+        box-shadow: (0.5rem 4px 17px #000000);
+    }
+    .desc{
+        padding: 2rem;
+        color: $darkThemeTextColor;
+        font-family: 'Roboto';
+    }
+}
