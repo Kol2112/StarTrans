@@ -14,7 +14,7 @@ export default function MainPage(){
     return(
         <>
         <Captions captionTitle={'Usługi'} captionDesc={'W tym się specjalizujemy'}/>
-      <div className='flex'>
+      <div className='flex flexAround'>
         <ServiceBox img={transport} title={'Transport'} desc={'Oferujemy profesjonalne usługi transportowe, zapewniając szybki i bezpieczny przewóz towarów na terenie kraju i za granicą. Dzięki nowoczesnej flocie i doświadczonemu zespołowi gwarantujemy terminową dostawę i pełne wsparcie logistyczne.'}/>
         <ServiceBox img={sped} title={'Spedycja'} desc={'Świadczymy kompleksowe usługi spedycyjne, organizując transport krajowy i międzynarodowy dopasowany do potrzeb klienta. Zajmujemy się całością procesu logistycznego, dbając o optymalne trasy, formalności i bezpieczeństwo przesyłek.'}/>
       </div>
@@ -24,7 +24,7 @@ export default function MainPage(){
         <p>Historia</p>
       </section>
       <Captions captionTitle={'Dlaczego warto nas wybrać?'} captionDesc={'To nas wyróżnia'}/>
-      <section className='flex'>
+      <section className='flex flexAround'>
         <InfoBox img={quality} desc={'Doświadczenie'}/>
         <InfoBox img={money} desc={'Niezawodność w dostarczaniu towaru'}/>
         <InfoBox img={invest} desc={'Konkurencyjna oferta'}/>

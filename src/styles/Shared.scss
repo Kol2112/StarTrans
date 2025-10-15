@@ -18,6 +18,8 @@ body{
 
 .flex{
     display: flex;
+}
+.flexAround{
     justify-content: space-around;
 }
 
@@ -57,4 +59,14 @@ body{
         color: $darkThemeTextColor;
         font-family: 'Roboto';
     }
+}
+
+h1{
+    color: $darkThemeTextColor;
+    font-family: $firstFont;
+}
+
+p{
+    color: $darkThemeTextColor;
+    font-family: $secondFont;
 }

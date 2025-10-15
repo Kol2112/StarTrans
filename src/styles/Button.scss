@@ -1,0 +1,16 @@
+@use 'Shared';
+
+button{
+    width: 80%;
+    background-color: Shared.$buttonColor;
+    border-radius: 1rem;
+    border: none;
+    color: Shared.$darkThemeTextColor;
+    margin-top: 2rem;
+    padding: 1rem 5rem;
+    font-size: larger;
+    font-family: Shared.$firstFont;
+}
+button:hover{
+    box-shadow: 0 4px 40px 16px rgba($color: #07931C, $alpha: 0.5);
+}
