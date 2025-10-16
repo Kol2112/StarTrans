@@ -2,7 +2,7 @@ import React from "react";
 import '../styles/Header.scss'
 import Logo from '../assets/logo/StarTransLogo.png'
 import { NavLink } from "react-router";
-export default function Header({bckgrnd, motto}){
+export default function Header({motto}){
 
     return(
         <header>
@@ -12,9 +12,9 @@ export default function Header({bckgrnd, motto}){
                 </div>
                 <nav>   
                     <NavLink to='/Usługi'>Usługi</NavLink>
-                    <NavLink to='/'>O firmie</NavLink>
-                    <NavLink to='/'>Kariera</NavLink>
-                    <NavLink to='/'>Kontakt</NavLink>
+                    <NavLink to='/O-nas'>O firmie</NavLink>
+                    <NavLink to='/Kariera'>Kariera</NavLink>
+                    <NavLink to='/Kontakt'>Kontakt</NavLink>
                 </nav>
                 <div id='Tooltip'>
 

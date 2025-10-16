@@ -46,7 +46,7 @@ Z nami zyskujesz spokój i pewność, że Twoja logistyka działa bez zakłóce�
                 <InfoBox img={rating} desc='Doświadczony zespół' width='12vw' height='20vh'/>     
                 <InfoBox img={idea} desc='Indywidualne podejście' width='12vw' height='20vh'/>     
             </div>
-            <section className="flex">
+            <section className="flex" id='ContactButton'>
                 <h1>Potrzebujesz naszej usługi?</h1>
                 <p>Skontaktuj się z nami</p>
                 <Button text='Kontakt' />

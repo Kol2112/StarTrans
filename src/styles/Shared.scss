@@ -70,3 +70,13 @@ p{
     color: $darkThemeTextColor;
     font-family: $secondFont;
 }
+
+#ContactButton{
+    margin-top:3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    button{
+        width: 20rem;
+    }
+}
