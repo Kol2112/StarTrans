@@ -5,7 +5,7 @@ import '../styles/Carrier.scss'
 import img from '../assets/img/satisfied-businessman-company-employer-wearing-suit-handshake-new-employee-get-hired-job-interview-man-hr-manager-employ-successful-candidate-shake-hand-business-meeting-placement-concept.jpg'
 export default function Carrier(){
     return(
-        <>
+        <section>
             <Captions captionTitle={'Kariera'} captionDesc={'Nie czekaj i dołącz do naszego zespołu'}/>
             <section className="content">
                 <div className="flex">
@@ -33,10 +33,13 @@ export default function Carrier(){
             </section>
             <Captions captionTitle={'Dlaczego warto u nas pracować?'} captionDesc={'Poznaj korzyści, które czekają właśnie na Ciebie!'}/>
             <div className="flex advantage">
-                <Adv img='' desc='Test' width='200px' height='100px'/>
-                <Adv img='' desc='Test' width='200px' height='100px'/>
-                <Adv img='' desc='Test' width='200px' height='100px'/>
+                <Adv img='' desc='Test' height='100px'/>
+                <Adv img='' desc='Test'  height='100px'/>
+                <Adv img='' desc='Test'  height='100px'/>
+                <Adv img='' desc='Test'  height='100px'/>
+                <Adv img='' desc='Test'  height='100px'/>
+                <Adv img='' desc='Test'  height='100px'/>
             </div>
-        </>
+        </section>
     )
 }

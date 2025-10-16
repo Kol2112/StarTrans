@@ -1,0 +1,16 @@
+Do uzupełnienia zalety,
+uzupełnić stopkę,
+naprawić podskakującą nawigację przez flex,
+uzupełnić podstronę 'O firmie'
+dodać tryb jasny
+dodać wersję anglojęzyczną,
+uzupełnić historię firmy na głównej stronie
+
+przepisać strukturę HTML podstronę
+przepisać style,
+poprawić funkcjonowanie rwd
+stworzyć svg dla InfoBox
+rozdzielić nav od header
+dodać prop do zmiany img w headerze
+
+svg dzielące formularz kontaktowy z informacjami kontaktowymi,
