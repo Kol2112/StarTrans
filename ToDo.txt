@@ -10,7 +10,6 @@ przepisać strukturę HTML podstronę
 przepisać style,
 poprawić funkcjonowanie rwd
 stworzyć svg dla InfoBox
-rozdzielić nav od header
 dodać prop do zmiany img w headerze
 
 svg dzielące formularz kontaktowy z informacjami kontaktowymi,

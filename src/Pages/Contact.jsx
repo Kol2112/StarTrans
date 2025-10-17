@@ -1,3 +1,5 @@
+import {useState} from 'react';
+
 import Captions from '../components/Captions.jsx';
 import Button from '../components/Button.jsx';
 import InfoBox from '../components/InfoBox.jsx';
@@ -7,16 +9,31 @@ import home from '../assets/icons/home.png'
 import email from '../assets/icons/email.png'
 import telephone from '../assets/icons/telephone.png'
 export default function Contact(){
-
+    const [name, setEmptyName] = useState('Imię');
+    const [emailState, setEmptyMail] = useState('Email');
+    const [tel, setEmptyTel] = useState('Nr tel');
+    const [desc, setEmptyDesc] = useState('Treść')
+    function clearHandleName(e){
+        setEmptyName(e.target.value ='');
+    }
+    function clearHandleMail(e){
+        setEmptyMail(e.target.value ='');
+    }
+    function clearHandleTel(e){
+        setEmptyTel(e.target.value ='');
+    }
+    function clearHandleDesc(e){
+        setEmptyDesc(e.target.value ='');
+    }
     return(
         <section id='box'>
             <Captions captionTitle={'Formularz kontaktowy'} captionDesc={'Skorzystaj z formularza kontaktowego, żeby omówić szczegóły'}/>
-            <section className='content'>
+            <section className='content marginContent'>
                     <div  className='form'>
-                        <input type="text" defaultValue='Imię' />
-                        <input type="email" defaultValue='Email' />
-                        <input type="tel" defaultValue='Nr. Tel' />
-                        <textarea className='descInpt' type="text" defaultValue='Treść' />
+                        <input type="text" defaultValue={name} onClick={clearHandleName} />
+                        <input type="email" defaultValue={emailState} onClick={clearHandleMail}/>
+                        <input type="tel" defaultValue={tel} onClick={clearHandleTel}/>
+                        <textarea className='descInpt' type="text" defaultValue={desc} onClick={clearHandleDesc}/>
                         <div className='agree'>
                             <input style={{width:'auto'}} type="checkbox" /><p>Treść zgody na przetwarzanie danych</p>
                         </div>

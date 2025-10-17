@@ -4,7 +4,6 @@ import Logo from '../assets/logo/StarTransLogo.png'
 import '../styles/Nav.scss'
 export default function Nav(){
     const [pos, setNewPos] = useState(null);
-
     window.onscroll = function(){
             if(this.window.pageYOffset > 50){
                 setNewPos('bckgrnd');
