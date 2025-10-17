@@ -9,6 +9,7 @@ import flexy from '../assets/icons/mainPage/continuous.png';
 import Captions from '../components/Captions.jsx'
 import ServiceBox from '../components/ServiceBox.jsx'
 import InfoBox from '../components/InfoBox.jsx';
+
 export default function MainPage(){
 
     return(
@@ -24,7 +25,7 @@ export default function MainPage(){
         <p>Historia</p>
       </section>
       <Captions captionTitle={'Dlaczego warto nas wybrać?'} captionDesc={'To nas wyróżnia'}/>
-      <section className='flex flexAround'>
+      <section className='flex flexAround marginContent'>
         <InfoBox img={quality} desc={'Doświadczenie'}/>
         <InfoBox img={money} desc={'Niezawodność w dostarczaniu towaru'}/>
         <InfoBox img={invest} desc={'Konkurencyjna oferta'}/>

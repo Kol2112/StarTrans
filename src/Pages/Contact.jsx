@@ -8,7 +8,6 @@ import email from '../assets/icons/email.png'
 import telephone from '../assets/icons/telephone.png'
 export default function Contact(){
 
-   
     return(
         <section id='box'>
             <Captions captionTitle={'Formularz kontaktowy'} captionDesc={'Skorzystaj z formularza kontaktowego, żeby omówić szczegóły'}/>

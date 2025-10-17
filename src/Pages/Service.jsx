@@ -38,7 +38,7 @@ Z nami zyskujesz spokój i pewność, że Twoja logistyka działa bez zakłóce�
             </section>
 
             <Captions captionTitle={'Dlaczego my'} captionDesc={'To nas wyróżnia'}/>
-            <div className="flex flexAround">
+            <div className="flex flexAround marginContent">
                 <InfoBox img={truck} desc='Nowoczesna flota' width='12vw' height='20vh'/>     
                 <InfoBox img={deadline} desc='Terminowość' width='12vw' height='20vh'/>     
                 <InfoBox img={radar} desc='Zasięg krajowy i międzynarodowy' width='12vw' height='20vh'/>     

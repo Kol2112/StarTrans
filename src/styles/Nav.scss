@@ -1,0 +1,50 @@
+ @use 'Shared';
+ #navi{
+            display:flex;
+            height: 10%;
+            width: 100%;
+            position:fixed;
+            
+
+            #logo{
+                width: 50%;
+                align-self: center;
+            }
+            #img{
+                width: 8rem;
+                margin: 0 8rem;
+            }
+
+            nav{
+                width: 50%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-content: center;
+
+                a{
+                text-decoration: none;
+                color:white;
+                padding: 0 2rem;
+                text-align: center;
+                font-size: larger;
+                font-family: Shared.$secondFont;
+                }
+
+                a:hover{
+                    padding-bottom: 0.5rem;
+                    border-bottom: solid #07931C;
+                }
+            }
+        
+        }
+        .bckgrnd{
+            background-color: rgba(0,0,0, 0.75);
+            border: solid 3px #CCCCCC;
+            border-radius: 1rem;
+        }
+        #navi2{
+            background-color: red;
+        }
