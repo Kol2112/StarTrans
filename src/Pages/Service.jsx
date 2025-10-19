@@ -51,6 +51,7 @@ Z nami zyskujesz spokój i pewność, że Twoja logistyka działa bez zakłóce�
                 <p>Skontaktuj się z nami</p>
                 <Button text='Kontakt' />
             </section>
+
         </>
     )
 }
