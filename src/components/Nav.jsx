@@ -12,28 +12,34 @@ export default function Nav(){
                 setNewPos(null)
             }
     }
-
-
+    const margin = {marginLeft: '1rem'}
+    const navStyle =[pos, margin];
     return(
         <>
             
-            <div id='navi' className={pos}>
-                <div id='logo'>
-                    <NavLink to='/'><img src={Logo} alt="Logo firmy" id='img'/></NavLink>
+            <div className="navi">
+                <div className={navStyle.map((el) =>{el})}>
+
+                    <div id='logo'>
+                        <NavLink to='/'><img src={Logo} alt="Logo firmy" id='img'/></NavLink>
+                    </div>
+                    <nav>   
+                        <NavLink to='/Usługi'>Usługi</NavLink>
+                        <NavLink to='/O-nas'>O firmie</NavLink>
+                        <NavLink to='/Kariera'>Kariera</NavLink>
+                        <NavLink to='/Kontakt'>Kontakt</NavLink>
+                    </nav>
+
                 </div>
-                <nav>   
-                    <NavLink to='/Usługi'>Usługi</NavLink>
-                    <NavLink to='/O-nas'>O firmie</NavLink>
-                    <NavLink to='/Kariera'>Kariera</NavLink>
-                    <NavLink to='/Kontakt'>Kontakt</NavLink>
-                </nav>
-                <div id='Tooltip'>
+                <div id='Tooltip' className={pos}>
                     <ThemeToggler />
-                    <p>PL</p>
-                    <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="20" cy="20" r="20" fill="white"/>
-                        <path d="M12 16l8 8 8-8" fill="none" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
+                    <div className='lang'>
+                        <p>PL</p>
+                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="15" cy="15" r="10" fill="white"/>
+                            <path d="M10 13l5 5 5-5" fill="none" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+                        </svg>
+                    </div>
 
                 </div>
             </div>

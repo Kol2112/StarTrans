@@ -7,7 +7,7 @@ export default function ThemeToggler(){
 
     return(
         <>
-    \    <svg
+        <svg
         width="60"
         height="30"
         viewBox="0 0 120 60"

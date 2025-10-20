@@ -1,13 +1,21 @@
  @use 'Shared';
- #navi{
+ .navi{
             display:flex;
             height: 10%;
             width: 100%;
             position:fixed;
             
+            >div{
+                width: 80%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
 
             #logo{
-                width: 50%;
+                width: 30%;
                 align-self: center;
             }
             #img{
@@ -46,6 +54,18 @@
             margin-top: 0.5rem;
             border-radius: 1rem;
         }
-        #navi2{
-            background-color: red;
+        #Tooltip{
+            margin: 0.5rem 4rem;
+            width: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .lang{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: row;
+            }
         }
