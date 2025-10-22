@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import Captions from "../components/Captions.jsx"
 import InfoBox from '../components/InfoBox.jsx';
 import Button from '../components/Button.jsx'
@@ -49,7 +50,7 @@ Z nami zyskujesz spokój i pewność, że Twoja logistyka działa bez zakłóce�
             <section className="flex" id='ContactButton'>
                 <h1>Potrzebujesz naszej usługi?</h1>
                 <p>Skontaktuj się z nami</p>
-                <Button text='Kontakt' />
+                <NavLink to='/kontakt'><Button text='Kontakt' /></NavLink>
             </section>
 
         </>

@@ -14,6 +14,7 @@ export default function MainPage(){
 
     return(
         <>
+        <title>StarTrans - Strona główna</title>
         <Captions captionTitle={'Usługi'} captionDesc={'W tym się specjalizujemy'}/>
       <div className='flex flexAround'>
         <ServiceBox img={transport} title={'Transport'} desc={'Oferujemy profesjonalne usługi transportowe, zapewniając szybki i bezpieczny przewóz towarów na terenie kraju i za granicą. Dzięki nowoczesnej flocie i doświadczonemu zespołowi gwarantujemy terminową dostawę i pełne wsparcie logistyczne.'}/>

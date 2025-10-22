@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router'
 import '../styles/ServiceBox.scss'
 import Button from './Button.jsx'
 export default function ServiceBox({img, title, desc}){
@@ -6,7 +7,7 @@ export default function ServiceBox({img, title, desc}){
             <img src={img} alt="" />
             <h1 className='contentTitle'>{title}</h1>
             <p className='contentText'>{desc}</p>
-            <Button text='Zamów usługę' />
+            <NavLink to='/Kontakt'><Button text='Zamów usługę' /></NavLink>
         </section>
     )
 }

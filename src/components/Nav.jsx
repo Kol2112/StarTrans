@@ -12,13 +12,11 @@ export default function Nav(){
                 setNewPos(null)
             }
     }
-    const margin = {marginLeft: '1rem'}
-    const navStyle =[pos, margin];
     return(
         <>
             
             <div className="navi">
-                <div className={navStyle.map((el) =>{el})}>
+                <div className={pos}>
 
                     <div id='logo'>
                         <NavLink to='/'><img src={Logo} alt="Logo firmy" id='img'/></NavLink>
