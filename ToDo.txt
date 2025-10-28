@@ -1,6 +1,5 @@
 Do uzupełnienia zalety,
 uzupełnić stopkę,
-naprawić podskakującą nawigację przez flex,
 uzupełnić podstronę 'O firmie'
 dodać tryb jasny
 dodać wersję anglojęzyczną,
