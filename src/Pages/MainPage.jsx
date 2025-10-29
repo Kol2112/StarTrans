@@ -10,12 +10,16 @@ import Captions from '../components/Captions.jsx'
 import ServiceBox from '../components/ServiceBox.jsx'
 import InfoBox from '../components/InfoBox.jsx';
 
+import '../styles/MainPage.scss'
+
 export default function MainPage(){
+    
 
     return(
         <>
         <title>StarTrans - Strona główna</title>
         <Captions captionTitle={'Usługi'} captionDesc={'W tym się specjalizujemy'}/>
+      
       <div className='flex flexAround'>
         <ServiceBox img={transport} title={'Transport'} desc={'Oferujemy profesjonalne usługi transportowe, zapewniając szybki i bezpieczny przewóz towarów na terenie kraju i za granicą. Dzięki nowoczesnej flocie i doświadczonemu zespołowi gwarantujemy terminową dostawę i pełne wsparcie logistyczne.'}/>
         <ServiceBox img={sped} title={'Spedycja'} desc={'Świadczymy kompleksowe usługi spedycyjne, organizując transport krajowy i międzynarodowy dopasowany do potrzeb klienta. Zajmujemy się całością procesu logistycznego, dbając o optymalne trasy, formalności i bezpieczeństwo przesyłek.'}/>

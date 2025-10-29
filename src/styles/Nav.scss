@@ -1,5 +1,5 @@
  @use 'Shared.scss';
- .navi{
+.navi{
             display:flex;
             height: 10%;
             width: 100%;
@@ -50,15 +50,15 @@
                 }
             }
         
-        }
-        .bckgrnd{
+}
+.bckgrnd{
             background-color: rgba(0,0,0, 0.75);
             border: solid 3px #CCCCCC;
             height: 5rem;
             margin-top: 0.5rem;
             border-radius: 1rem;
-        }
-        #Tooltip{
+}
+#Tooltip{
             margin: 0.5rem 4rem;
             width: 20%;
             display: flex;
@@ -66,10 +66,55 @@
             justify-content: space-around;
             flex-direction: row;
             flex-wrap: wrap;
-            .lang{
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                flex-direction: row;
+        .lang {
+            position: relative; // potrzebne, żeby dropdown był względem tego elementu
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: row;
+            cursor: pointer;
+            p{
+                border-bottom: 0.2rem solid transparent;
+                padding: 0.8rem;
+                text-align: center;
+                border-radius: 1rem;
+            }
+                p:hover {
+                
+                background-color: rgba(0, 0, 0, 0.85);
+                backdrop-filter: blur(6px); // lekki efekt szkła
+                }
+
+            .langBox {
+            position: absolute;
+            top: calc(100% + 10%); // tuż pod przyciskiem języka
+            left: calc(0% + 50%);
+            transform: translateX(-50%);
+            width: 8vw;
+            background-color: rgba(0, 0, 0, 0.85);
+            border: 2px solid #CCCCCC;
+            border-radius: 0.8rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 0.5rem 0;
+            z-index: 10;
+            transition: all 0.2s ease-in-out;
+            backdrop-filter: blur(6px); // lekki efekt szkła
+
+                p {
+                    display: block;
+                    padding: 0.4rem 0;
+                    color: white;
+                    text-decoration: none;
+                    font-family: Shared.$secondFont;
+                    transition: background-color 0.2s ease, color 0.2s ease;
+                    border-bottom: 0.2rem solid transparent;
+                }
+
             }
         }
+
+}   
+

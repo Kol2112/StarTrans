@@ -1,13 +1,4 @@
 @use 'styles/Shared.scss';
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background-color: #1D1D1D;
-}
-
 .flex{
     display: flex;
 }
@@ -21,7 +12,19 @@ body{
 .marginContent{
     margin-top: 2rem;
 }
-
+.border{
+    border-left: solid 4px #07931C;
+    padding-left: 0.5rem;
+}
+.captionTitle{
+    color: Shared.$darkThemeTextColor;
+    font-family: Shared.$firstFont;
+}
+.captionDesc{
+    color: Shared.$darkThemeTextColor;
+    font-style: italic;
+    font-family: Shared.$secondFont;
+}
 
 .box{
     display: flex;

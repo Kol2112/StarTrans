@@ -1,4 +1,4 @@
-import '../styles/Shared.scss'
+import '../styles/Captions.scss'
 export default function Captions({captionTitle, captionDesc}){
     return(
         <section className='marginContent'>

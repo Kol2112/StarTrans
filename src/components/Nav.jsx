@@ -2,6 +2,7 @@ import { NavLink } from "react-router";
 import {useState} from 'react';
 import Logo from '../assets/logo/StarTransLogo.png'
 import ThemeToggler from "./ThemeToggler.jsx";
+import LanguageDropdown from "./LanguageDropdown.jsx";
 import '../styles/Nav.scss'
 export default function Nav(){
     const [pos, setNewPos] = useState(null);
@@ -31,13 +32,7 @@ export default function Nav(){
                 </div>
                 <div id='Tooltip' className={pos}>
                     <ThemeToggler />
-                    <div className='lang'>
-                        <p>PL</p>
-                        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="15" cy="15" r="10" fill="white"/>
-                            <path d="M10 13l5 5 5-5" fill="none" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    </div>
+                    <LanguageDropdown />
 
                 </div>
             </div>
