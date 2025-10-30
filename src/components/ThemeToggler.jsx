@@ -3,7 +3,15 @@ import '../styles/ThemeToggler.scss';
 
 export default function ThemeToggler(){
     
-    const [dark, setDark] = useState(false);
+    const [theme, setTheme] = useState(localStorage.getItem("theme"));
+
+    const toggleTheme = () => {
+      const newTheme = theme === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+      setTheme(newTheme);
+
+    };
 
     return(
         <>
@@ -13,8 +21,10 @@ export default function ThemeToggler(){
         viewBox="0 0 120 60"
         xmlns="http://www.w3.org/2000/svg"
         style={{ cursor: "pointer" }}
-        className={dark ? "dark" : ""}
-        onClick={() => setDark(!dark)}
+        className={theme === "light" ? "light" : "dark"}
+        onClick={()=>{
+          toggleTheme()
+        }}
         >
          <rect className="bg" x="0" y="0" width="120" height="60" rx="30" />
           <g className="sun" transform="translate(35,30)">
