@@ -1,8 +1,10 @@
+import { useTranslation } from 'react-i18next'
 import '../styles/Footer.scss'
 export default function Footer(){
+    const {t} = useTranslation();
     return(
         <footer className='flex flexAround'>
-            <p>C 2025 Wszelkie prawa zastrzeżone</p>
+            <p>{t('footerRights')}</p>
             <p>Leżajsk, ulica</p>
             <div className='contact'>
                 <p><a href='mailto:#'>mail</a></p>

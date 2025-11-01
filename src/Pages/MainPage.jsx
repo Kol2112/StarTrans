@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import transport from '../assets/icons/mainPage/fast-delivery.png'
 import sped from '../assets/icons/mainPage/worldwide-shipping.png'
 import aboutPic from '../assets/img/full-shot-man-sitting-truck.jpg'
@@ -13,28 +15,28 @@ import InfoBox from '../components/InfoBox.jsx';
 import '../styles/MainPage.scss'
 
 export default function MainPage(){
-    
+    const {t} = useTranslation();
 
     return(
         <>
         <title>StarTrans - Strona główna</title>
-        <Captions captionTitle={'Usługi'} captionDesc={'W tym się specjalizujemy'}/>
+        <Captions captionTitle={t("serviceCaptionMP")} captionDesc={t('serviceSmCaptionMP')}/>
       
       <div className='flex flexAround'>
-        <ServiceBox img={transport} title={'Transport'} desc={'Oferujemy profesjonalne usługi transportowe, zapewniając szybki i bezpieczny przewóz towarów na terenie kraju i za granicą. Dzięki nowoczesnej flocie i doświadczonemu zespołowi gwarantujemy terminową dostawę i pełne wsparcie logistyczne.'}/>
-        <ServiceBox img={sped} title={'Spedycja'} desc={'Świadczymy kompleksowe usługi spedycyjne, organizując transport krajowy i międzynarodowy dopasowany do potrzeb klienta. Zajmujemy się całością procesu logistycznego, dbając o optymalne trasy, formalności i bezpieczeństwo przesyłek.'}/>
+        <ServiceBox img={transport} title={'Transport'} desc={t('transportDescMP')}/>
+        <ServiceBox img={sped} title={t('spedCaptionMP')} desc={t('spedDescMP')}/>
       </div>
-      <Captions captionTitle={'O nas'} captionDesc={'Twoi partnerzy w logistyce'}/>
+      <Captions captionTitle={t('aboutCaptionMP')} captionDesc={t('aboutSmCaptionMP')}/>
       <section className='box marginContent' style={{width: "100%"}}>
         <img src={aboutPic} alt="Zdjęcie kierowcy z telefonem" />
         <p>Historia</p>
       </section>
-      <Captions captionTitle={'Dlaczego warto nas wybrać?'} captionDesc={'To nas wyróżnia'}/>
+      <Captions captionTitle={t('chooseUsCaptionMP')} captionDesc={t('chooseUsSmCaptionMP')}/>
       <section className='flex flexAround marginContent'>
-        <InfoBox img={quality} desc={'Doświadczenie'}/>
-        <InfoBox img={money} desc={'Niezawodność w dostarczaniu towaru'}/>
-        <InfoBox img={invest} desc={'Konkurencyjna oferta'}/>
-        <InfoBox img={flexy} desc={'Elastyczna usługa'}/>
+        <InfoBox img={quality} desc={t('exp')}/>
+        <InfoBox img={money} desc={t('reliable')}/>
+        <InfoBox img={invest} desc={t('competitive')}/>
+        <InfoBox img={flexy} desc={t('flexService')}/>
       </section>
       </>
     )

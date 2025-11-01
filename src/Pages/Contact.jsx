@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import { useTranslation } from "react-i18next";
 
 import Captions from '../components/Captions.jsx';
 import Button from '../components/Button.jsx';
@@ -9,10 +10,11 @@ import home from '../assets/icons/home.png'
 import email from '../assets/icons/email.png'
 import telephone from '../assets/icons/telephone.png'
 export default function Contact(){
-    const [name, setEmptyName] = useState('Imię');
+    const {t} = useTranslation();
+    const [name, setEmptyName] = useState(t('formName'));
     const [emailState, setEmptyMail] = useState('Email');
-    const [tel, setEmptyTel] = useState('Nr tel');
-    const [desc, setEmptyDesc] = useState('Treść')
+    const [tel, setEmptyTel] = useState(t('formTel'));
+    const [desc, setEmptyDesc] = useState(t('formDesc'))
     function clearHandleName(e){
         setEmptyName(e.target.value ='');
     }
@@ -27,7 +29,7 @@ export default function Contact(){
     }
     return(
         <section id='box'>
-            <Captions captionTitle={'Formularz kontaktowy'} captionDesc={'Skorzystaj z formularza kontaktowego, żeby omówić szczegóły'}/>
+            <Captions captionTitle={t('formCaptionFR')} captionDesc={t('formSMCaptionFR')}/>
             <section className='content marginContent'>
                     <div  className='form'>
                         <input type="text" defaultValue={name} onClick={clearHandleName} />
@@ -35,9 +37,9 @@ export default function Contact(){
                         <input type="tel" defaultValue={tel} onClick={clearHandleTel}/>
                         <textarea className='descInpt' type="text" defaultValue={desc} onClick={clearHandleDesc}/>
                         <div className='agree'>
-                            <input style={{width:'auto'}} type="checkbox" /><p>Treść zgody na przetwarzanie danych</p>
+                            <input style={{width:'auto'}} type="checkbox" /><p>{t('formCheckbox')}</p>
                         </div>
-                        <Button text='Wyślij'/>
+                        <Button text={t('formSubBtn')}/>
                     </div>
                     <div className='infoSection'>
                         <section className='flex contactInfo'>

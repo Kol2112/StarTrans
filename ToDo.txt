@@ -1,11 +1,16 @@
 Do uzupełnienia zalety,
 uzupełnić stopkę,
 uzupełnić podstronę 'O firmie'
-dodać tryb jasny
-dodać wersję anglojęzyczną,
 uzupełnić historię firmy na głównej stronie
+
+
+dodać tryb jasny
+logo na MP ma przenosić na samą górę
+dodać prop do zmiany img w headerze
+dodać aktywny border w łączu nawigacji
+naciśnięcie aktywnego menu w nawigacji ma przenosić na górę strony
+Obsługa formularza (w pythonie)
 
 przepisać style,
 poprawić funkcjonowanie rwd
-dodać prop do zmiany img w headerze
 
