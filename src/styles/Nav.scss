@@ -44,7 +44,7 @@
                 transition: border-color 0.2s ease;
                 }
 
-                a:hover{
+                a:hover, .active{
                     border-bottom-color: #07931C;
                 }
             }

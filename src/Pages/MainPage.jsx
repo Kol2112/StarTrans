@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-
 import transport from '../assets/icons/mainPage/fast-delivery.png'
 import sped from '../assets/icons/mainPage/worldwide-shipping.png'
 import aboutPic from '../assets/img/full-shot-man-sitting-truck.jpg'

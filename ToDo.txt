@@ -1,16 +1,13 @@
-Do uzupełnienia zalety,
-uzupełnić stopkę,
-uzupełnić podstronę 'O firmie'
-uzupełnić historię firmy na głównej stronie
-
-
-dodać tryb jasny
-logo na MP ma przenosić na samą górę
-dodać prop do zmiany img w headerze
-dodać aktywny border w łączu nawigacji
-naciśnięcie aktywnego menu w nawigacji ma przenosić na górę strony
+Dodać aktywny border w łączu nawigacji
+Dodać prop do zmiany img w headerze
 Obsługa formularza (w pythonie)
 
-przepisać style,
-poprawić funkcjonowanie rwd
+Przepisać style,
+Poprawić funkcjonowanie rwd
+Dodać animację oraz lazy loading dolnych sekcji strony dla poprawy wydajności
+Dodać tryb jasny
 
+Do uzupełnienia zalety,
+Uzupełnić stopkę,
+Uzupełnić podstronę 'O firmie'
+Uzupełnić historię firmy na głównej stronie
