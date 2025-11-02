@@ -19,6 +19,7 @@ export default function MainPage(){
     return(
         <>
         <title>StarTrans - Strona główna</title>
+        
         <Captions captionTitle={t("serviceCaptionMP")} captionDesc={t('serviceSmCaptionMP')}/>
       
       <div className='flex flexAround'>

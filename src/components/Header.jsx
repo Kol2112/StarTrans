@@ -1,18 +1,14 @@
 import React from "react";
 import Nav from './Nav.jsx'
-import { useTranslation } from "react-i18next";
 import '../styles/Header.scss'
 
-export default function Header({motto}){
-    const { t } = useTranslation();
+export default function Header({headingCap, headingSMCap, bckgrnd}){
     return(
-        <header>
+        <header className={bckgrnd}>
             <Nav />
             <div id='motto'>
-                {motto}
-                <h1>{t('headingCaption')}
-                </h1>
-                <p>{t('headingSmCaption')}</p>
+                <h1>{headingCap}</h1>
+                <p>{headingSMCap}</p>
             </div>
 
         </header>
