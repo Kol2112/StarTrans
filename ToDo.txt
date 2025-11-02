@@ -1,6 +1,4 @@
-Dodać aktywny border w łączu nawigacji
 Dodać prop do zmiany img w headerze
-Obsługa formularza (w pythonie)
 
 Przepisać style,
 Poprawić funkcjonowanie rwd
