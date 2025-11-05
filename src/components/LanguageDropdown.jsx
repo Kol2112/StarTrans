@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import '../styles/Nav.scss'
+import '../styles/Nav.css'
 // import { motion, AnimatePresence } from "framer-motion";
 
 export default function LanguageDropdown() {
@@ -17,12 +17,12 @@ export default function LanguageDropdown() {
 
   return (
     
-    <div className='lang'>
-        <p onClick={() => setOpen(!open)}>{currentLang}</p>
-        {/* <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" >
+    <div className='lang' onClick={() => setOpen(!open)}>
+        <p>{currentLang}</p>
+        <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" >
             <circle cx="15" cy="15" r="10" fill="white"/>
             <path d="M10 13l5 5 5-5" fill="none" stroke="black" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg> */}
+        </svg>
 
       
         {open && (

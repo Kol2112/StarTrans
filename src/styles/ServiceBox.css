@@ -1,0 +1,30 @@
+
+.contentBox{
+    margin-top: 2rem;
+    text-align: center;
+    background-color: var(--secondMainColor);
+    width: 40%;
+    border-radius: 1rem;
+    padding: 2rem 0;
+    box-shadow: 0 0.4rem 60px rgba(0, 0, 0, 0.6);
+    &   img{
+        width: 7rem;
+    }
+    &   .contentText{
+        font-weight: 300;
+        margin: 2rem;
+        font-size:large;
+    }
+}
+
+@media (max-width: 900px){
+    .contentBox{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .contentBox{
+        width: 100%;
+        border-radius: 0;
+    }
+}

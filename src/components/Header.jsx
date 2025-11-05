@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from './Nav.jsx'
-import '../styles/Header.scss'
+import '../styles/Header.css'
 
 export default function Header({headingCap, headingSMCap, bckgrnd}){
     return(

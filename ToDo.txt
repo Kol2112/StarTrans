@@ -1,5 +1,3 @@
-Dodać prop do zmiany img w headerze
-
 Przepisać style,
 Poprawić funkcjonowanie rwd
 Dodać animację oraz lazy loading dolnych sekcji strony dla poprawy wydajności

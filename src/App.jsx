@@ -10,8 +10,8 @@ import Carrier from './Pages/Carrier.jsx';
 import Contact from './Pages/Contact.jsx';
 
 
-import './App.scss';
-
+import './App.css';
+// import './styles/Header.scss'
 function App() {
 
   const {t} = useTranslation();

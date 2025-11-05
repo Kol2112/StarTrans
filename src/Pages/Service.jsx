@@ -4,8 +4,6 @@ import Captions from "../components/Captions.jsx"
 import InfoBox from '../components/InfoBox.jsx';
 import Button from '../components/Button.jsx'
 
-
-
 import sup from '../assets/img/supply-chain-representation-still-life.jpg'
 import secondImg from '../assets/img/top-view-delivery-truck-with-copy-space.jpg'
 import truck from '../assets/icons/truck.png'
@@ -15,19 +13,21 @@ import idea from  '../assets/icons/idea.png'
 import rating from '../assets/icons/rating.png'
 export default function Service(){
     const {t} = useTranslation();
+
+    const marginLeft = {marginLeft: '1rem'}
     return(
         <>
             <Captions captionTitle={t("urServiceCaptionSV")} captionDesc={t('urServiceSmCaptionSV')}/>
-            <section className='box marginContent' style={{width: "100%"}}>
+            <section className='box marginContent'>
                 <img src={sup} alt="Zdjęcie kierowcy z telefonem" />
-                <div>
-                    <Captions captionTitle={'Transport'} captionDesc={t('transSMCaptionSV')}>Historia</Captions>
+                <div className="descBox">
+                    <Captions captionTitle={'Transport'} captionDesc={t('transSMCaptionSV')} style={marginLeft}>Historia</Captions>
                     <p className="desc">{t('transDescSV')}</p>
                 </div>
             </section>
             <section className='box marginContent'>
-                <div>
-                    <Captions captionTitle={t('spedCaptionMP')} captionDesc={t('spedSMCaptionSV')} >Historia</Captions>
+                <div className="descBox">
+                    <Captions captionTitle={t('spedCaptionMP')} captionDesc={t('spedSMCaptionSV')} style={marginLeft}>Historia</Captions>
                     <p className="desc">{t('spedDescSV')}</p>
                 </div>
                 <img src={secondImg} alt="Zdjęcie kierowcy z telefonem" />
