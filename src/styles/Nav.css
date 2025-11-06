@@ -67,7 +67,6 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 1rem;
-    backdrop-filter: blur(6px);
     transition: all 0.3s ease-in-out;
     z-index: 99;
 
@@ -84,11 +83,12 @@
 
     & a:hover,
     .active {
-      border-bottom-color: #07931c;
+      border-bottom-color: var(--buttonColor);
     }
 
     &.open {
       display: flex;
+      backdrop-filter: blur(6px);
     }
 
     & #Tooltip.mobile-only {
@@ -145,23 +145,33 @@
   }
 
   @media (max-width: 767px) {
-    & #leftNaviSide{
+    #leftNaviSide{
         width: 100%;
         margin: 0;
         border-radius: 0;
         border: 0;
         padding: 0 3rem;
         justify-content: space-between;
+
+        & #logo{
+        padding-left: 0;
+      }
+      & .open{
+        border-top: 1px solid white;
+      }
     }
-
-
-    & #Tooltip.desktop-only {
+    #Tooltip.desktop-only {
       display: none;
     }
-    & #logo{
-      padding-left: 0;
+
+
+    .bckgrnd{
+      background-color: rgba(0, 0, 0, 0.75);
+      border: none;
+      border-radius:0;
     }
   }
+
 }
 .lang{
   display: flex;

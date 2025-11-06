@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
 import Captions from "../components/Captions.jsx";
 import Adv from "../components/Adv.jsx";
-import '../styles/Carrier.scss'
+import Button from '../components/Button.jsx'
+import '../styles/Carrier.css'
 
-import img from '../assets/img/satisfied-businessman-company-employer-wearing-suit-handshake-new-employee-get-hired-job-interview-man-hr-manager-employ-successful-candidate-shake-hand-business-meeting-placement-concept.jpg'
+import img from '../assets/img/aggr2.jpg'
 export default function Carrier(title){
 
     const {t} = useTranslation();
@@ -12,16 +13,15 @@ export default function Carrier(title){
             <title>{`StarTrans - ${title.title}`}</title>
             <Captions captionTitle={t('carrierNavi')} captionDesc={t('carrierSmCaptionCR')}/>
             <section className="content">
-                <div className="flex">
-                    <div>
-                        <p className="text">{t('carrierDesc1')}</p>
-                        
-                        <p className="text">{t('carrierDesc2')}</p>
-
-
-                        <p className="text">{t('carrierDesc3')} <span style={{color:"#07931C"}}>{t('carrierDesc4Span')}</span></p>
+                <div className="carDesc">
+                    <div className="text">
+                        <p>{t('carrierDesc1')}</p>
+                        <p style={{marginTop: '1rem'}}>{t('carrierDesc2')}</p>
+                        <p style={{marginTop: '1rem'}}>{t('carrierDesc3')}</p>
+                        <a href="https://www.wp.pl" className="btn"><Button text="Dołącz do nas!" style={'btnCnt'} /></a>
                     </div>
-                    <img src={img} alt="Zdjęcie podania rąk" />
+                    <img src=
+                    {img} alt="Zdjęcie podania rąk" />
                 </div>
                 <div className="CV">
                     <h2>{t('cvReqHeading')}</h2>

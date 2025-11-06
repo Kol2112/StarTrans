@@ -1,0 +1,42 @@
+.lang-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  position: relative;
+}
+
+.langBox {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: black;
+  color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  text-align: center;
+  margin-top: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.langBox p {
+  margin: 0;
+  padding: 6px 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.langBox p:hover {
+  background-color: #222;
+}

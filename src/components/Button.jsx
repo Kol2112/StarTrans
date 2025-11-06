@@ -1,8 +1,8 @@
-import '../styles/Button.scss'
-export default function Button({text, onclick}){
+import '../styles/Button.css'
+export default function Button({text, onclick, style}){
     return(
         <>
-            <button onClick={onclick}>{text}</button>
+            <button onClick={onclick} className={style}>{text}</button>
         </>
     )
 }

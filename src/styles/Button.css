@@ -1,0 +1,16 @@
+button{
+    width: 80%;
+    background-color: var(--buttonColor);
+    border-radius: 1rem;
+    border: none;
+    color: var(--ThemeTextColor);
+    margin-top: 2rem;
+    padding: 1rem 0;
+    font-size: larger;
+    font-family: var(--firstFont);
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 4px 40px 16px rgba(7, 147, 28, 0.5);
+}

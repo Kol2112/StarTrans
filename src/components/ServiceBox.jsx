@@ -9,7 +9,7 @@ export default function ServiceBox({img, title, desc}){
             <img src={img} alt="" />
             <h1 className='contentTitle'>{title}</h1>
             <p className='contentText'>{desc}</p>
-            <NavLink to='/Kontakt'><Button text={t('orderService')} /></NavLink>
+            <NavLink to='/Contact'><Button text={t('orderService')} /></NavLink>
         </section>
     )
 }

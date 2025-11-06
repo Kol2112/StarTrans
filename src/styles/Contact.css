@@ -1,0 +1,128 @@
+#box{
+    background-color: var(--secondMainColor);
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: var(--boxShadow);
+    & .content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        & .form{
+            width: 50%;
+            & input, textarea{
+                background-color: var(--secondMainColor);
+                border: 1px solid #1D1D1D;
+                border-radius: 1rem;
+                color: var(--ThemeTextColor);
+                width: calc(100% / 3.5);
+                padding: 1rem;
+                margin: 0.4rem;
+            }
+            & .descInpt{
+                margin: 0 0.4rem;
+                width: calc(100% - 10%);
+                height: 40vh;
+            }
+            & .agree{
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: nowrap;
+                flex-direction: row;
+                & label{
+                    font-family: var(--secondFont);
+                    color: var(--ThemeTextColor);
+                }
+            }
+            & Button{
+                width: 20%;
+                padding: 1rem 2rem;
+            }
+        }
+        & .infoSection{
+            display: flex;
+            width: 40%;
+            flex-direction: column;
+            & .contactInfo{
+                display: flex;
+                justify-content: space-around;
+                align-items: start;
+                align-content: start;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+            & iframe{
+
+                margin-top: 2rem;
+                width: 100%;
+                height: 40vh;
+                border-radius: 1rem;
+            }
+            & img{
+                width: 3rem;
+                height: 3rem;
+            }
+        }
+
+    }
+}
+
+@media(max-width: 1320px){
+    #box{
+        & .content{
+            & .infoSection{
+                & .contactInfo{
+                    flex-direction: column;
+                }
+            }
+        & .form{
+            & Button{
+                width: 40%;
+            }  
+
+         }
+        }
+    }
+
+}
+
+@media(max-width: 900px){
+    #box{
+        & .content{
+            flex-direction: column;
+            & .form{
+                width: 100%;
+            }
+            & .infoSection{
+                width: 100%;
+                flex-direction: column-reverse;
+            }
+            & .form{
+                & Button{
+                    width: 20%;
+                    padding: 1rem 0;
+                } 
+            }
+        }
+        iframe{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media (max-width: 425px){
+    #box {
+        & .content {
+            & .infoSection {
+                & .contactInfo {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

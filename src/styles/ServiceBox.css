@@ -6,7 +6,7 @@
     width: 40%;
     border-radius: 1rem;
     padding: 2rem 0;
-    box-shadow: 0 0.4rem 60px rgba(0, 0, 0, 0.6);
+    box-shadow: var(--boxShadow);
     &   img{
         width: 7rem;
     }
@@ -20,6 +20,16 @@
 @media (max-width: 900px){
     .contentBox{
         width: 100%;
+        &   img{
+        width: 5rem;
+        }
+        & .contentTitle{
+            font-size: larger;
+        }
+        &   .contentText{
+            margin: 1rem;
+            /* font-size:; */
+        }
     }
 }
 @media (max-width: 768px){

@@ -1,0 +1,74 @@
+.content{
+    &   .carDesc{
+        margin-top: 1rem;
+        width: 100%;
+        display:flex;
+        justify-content: space-evenly;
+        align-items: start;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    &   .CV{
+        width: 50%;
+        margin-top: 2rem;
+        margin-left: 50% ;
+    }
+    
+    &   img{
+        width: 50%;
+        height: 20%;
+    }
+    &   h2{
+            color: var(--darkThemeTextColor);
+            font-family: var(--firstFont);
+            
+    }
+    &   a{
+    width: 100%;
+    text-decoration: none;
+}
+}
+
+
+.btn{
+    display: flex;
+    justify-content: start;
+
+}
+
+@media(min-width:1024px){
+    .btnCnt{
+        width: 40%;
+    }
+}
+
+@media(max-width: 1024px){
+    .content{
+        margin: 0 1rem;
+        & .carDesc{
+            flex-direction: column-reverse;
+        }
+
+        &   .text{
+            margin-top: 1rem;
+        }
+        & .CV{
+            border-top: 1px solid white;
+            width: 100%;
+            margin-left: 0;
+        }
+        & img{
+            width: 100%;
+        }
+    }
+    .btn{
+        justify-content: center;
+    }   
+}
+
+@media(max-width: 425px){
+    .btnCnt{
+        width: 100%;;
+    }
+}

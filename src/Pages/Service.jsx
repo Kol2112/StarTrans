@@ -31,22 +31,22 @@ export default function Service(title){
                     <Captions captionTitle={t('spedCaptionMP')} captionDesc={t('spedSMCaptionSV')} style={marginLeft}>Historia</Captions>
                     <p className="desc">{t('spedDescSV')}</p>
                 </div>
-                <img src={secondImg} alt="Zdjęcie kierowcy z telefonem" />
+                <img src={secondImg} alt="Zdjęcie kierowcy z telefonem" style={{borderRadius: '0 1rem 1rem 0'}}/>
             </section>
 
             <Captions captionTitle={t('whyUsCaptionSV')} captionDesc={t('whyUsSMCaptionSV')}/>
-            <div className="flex flexAround marginContent">
-                <InfoBox img={truck} desc={t('fleet')} width='12vw' height='20vh'/>     
-                <InfoBox img={deadline} desc={t('term')} width='12vw' height='20vh'/>     
-                <InfoBox img={radar} desc={t('reach')} width='12vw' height='20vh'/>     
-                <InfoBox img={truck} desc={t('cont&monitoring')} width='12vw' height='20vh'/>     
-                <InfoBox img={rating} desc={t('expTeam')} width='12vw' height='20vh'/>     
-                <InfoBox img={idea} desc={t('inv')} width='12vw' height='20vh'/>     
+            <div className="infoBox marginContent">
+                <InfoBox img={truck} desc={t('fleet')} type={'containerService'} />     
+                <InfoBox img={deadline} desc={t('term')} type={'containerService'} />     
+                <InfoBox img={radar} desc={t('reach')} type={'containerService'} />     
+                <InfoBox img={truck} desc={t('cont&monitoring')} type={'containerService'} />     
+                <InfoBox img={rating} desc={t('expTeam')} type={'containerService'} />     
+                <InfoBox img={idea} desc={t('inv')} type={'containerService'} />     
             </div>
             <section className="flex" id='ContactButton'>
                 <h1>{t('servicesReqHeadingSV')}</h1>
                 <p>{t('servicesReqContactSV')}</p>
-                <NavLink to='/kontakt'><Button text={t('contactBtn')} /></NavLink>
+                <NavLink to='/Contact'><Button text={t('contactBtn')} /></NavLink>
             </section>
 
         </>

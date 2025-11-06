@@ -1,0 +1,30 @@
+.advantage{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    &   .advItem{
+        background-color: var(--secondMainColor);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        width:30%;
+        height:8rem;
+        border:solid white 2px
+    }
+}
+
+@media (max-width: 600px) {
+    .advantage {
+        flex-direction: column;
+        margin: 0.5rem 0;
+        & .advItem{
+            width: 100%;
+        }
+    }
+}

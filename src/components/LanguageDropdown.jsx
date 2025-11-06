@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import '../styles/Nav.css'
+import '../styles/LanguageDropdown.css'
 // import { motion, AnimatePresence } from "framer-motion";
 
 export default function LanguageDropdown() {

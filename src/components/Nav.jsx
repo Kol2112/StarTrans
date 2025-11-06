@@ -11,7 +11,6 @@ export default function Nav() {
   const [pos, setNewPos] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Zmiana tła po scrollu
   useEffect(() => {
     const handleScroll = () => {
       if (window.pageYOffset > 50) setNewPos("bckgrnd");
@@ -42,7 +41,7 @@ export default function Nav() {
                 <span></span>
             </div>
 
-            <nav className={menuOpen ? "open" : ""}>
+            <nav className={`${menuOpen ? "open" : ""} ${pos || ""}`}>
                 <NavLink to='Service' className={({ isActive }) => (isActive ? "active" : "")} onClick={resetScrollHandle}>
                   {t("service")}
                 </NavLink>

@@ -20,24 +20,24 @@ function App() {
     const path = decodeURIComponent(location.pathname);
     switch (path) {
       case '/Service':
-        return { headingCap: t('serviceHeadingCap'), headingSMCap: t('serviceHeadingSmCap'), background: 'secondBackground'};
+        return { headingCap: t('serviceHeadingCap'), headingSMCap: t('serviceHeadingSmCap'), background: 'secondBackground', style:{height:'40vh'}};
       case '/About':
-        return { headingCap: t('aboutHeadingCap'), headingSMCap: t('aboutHeadingSmCap'), background: 'secondBackground' };
+        return { headingCap: t('aboutHeadingCap'), headingSMCap: t('aboutHeadingSmCap'), background: 'secondBackground', style:{height:'40vh'}};
       case '/Career':
-        return { headingCap: t('carrierHeadingCap'), headingSMCap: t('carrierHeadingSmCap'), background: 'secondBackground' };
+        return { headingCap: t('carrierHeadingCap'), headingSMCap: t('carrierHeadingSmCap'), background: 'secondBackground', style:{height:'40vh'} };
       case '/Contact':
-        return { headingCap: t('contactHeadingCap'), headingSMCap: t('contactHeadingSmCap'), background: 'secondBackground' };
+        return { headingCap: t('contactHeadingCap'), headingSMCap: t('contactHeadingSmCap'), background: 'secondBackground', style:{height:'40vh'} };
       default:
         return { headingCap: t('headingCaption'), headingSMCap: t('headingSmCaption'), background: 'mainBackground'};
     }
   };
 
-  const { headingCap, headingSMCap, background } = getHeading();
+  const { headingCap, headingSMCap, background, style } = getHeading();
 
 
   return (
     <>
-    <Header headingCap={headingCap} headingSMCap={headingSMCap} bckgrnd={background}/>
+    <Header headingCap={headingCap} headingSMCap={headingSMCap} bckgrnd={background} style={style}/>
     <main id='content'>
       <Routes>
         <Route index element={<MainPage title={t('mainPG')}/>} />

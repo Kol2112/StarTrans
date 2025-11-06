@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../styles/ThemeToggler.scss';
+import '../styles/ThemeToggler.css';
 
 export default function ThemeToggler(){
     
