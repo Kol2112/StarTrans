@@ -9,7 +9,7 @@ import home from '../assets/icons/home.png'
 import email from '../assets/icons/email.png'
 import telephone from '../assets/icons/telephone.png'
 
-export default function Contact() {
+export default function Contact(title) {
     const { t } = useTranslation();
     const [formData, setFormData] = useState({
         name: t('formName'),
@@ -97,6 +97,7 @@ function handleSubmit(e) {
 
     return (
         <section id='box'>
+            <title>{`StarTrans - ${title.title}`}</title>
             <Captions captionTitle={t('formCaptionFR')} captionDesc={t('formSMCaptionFR')} />
             <section className='content marginContent'>
                 <div className='form'>

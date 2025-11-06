@@ -11,12 +11,13 @@ import deadline from '../assets/icons/deadline.png'
 import radar from '../assets/icons/radar.png'
 import idea from  '../assets/icons/idea.png'
 import rating from '../assets/icons/rating.png'
-export default function Service(){
+export default function Service(title){
     const {t} = useTranslation();
 
     const marginLeft = {marginLeft: '1rem'}
     return(
         <>
+            <title>{`StarTrans - ${title.title}`}</title>
             <Captions captionTitle={t("urServiceCaptionSV")} captionDesc={t('urServiceSmCaptionSV')}/>
             <section className='box marginContent'>
                 <img src={sup} alt="Zdjęcie kierowcy z telefonem" />

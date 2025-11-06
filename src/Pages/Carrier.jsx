@@ -4,11 +4,12 @@ import Adv from "../components/Adv.jsx";
 import '../styles/Carrier.scss'
 
 import img from '../assets/img/satisfied-businessman-company-employer-wearing-suit-handshake-new-employee-get-hired-job-interview-man-hr-manager-employ-successful-candidate-shake-hand-business-meeting-placement-concept.jpg'
-export default function Carrier(){
+export default function Carrier(title){
 
     const {t} = useTranslation();
     return(
         <section>
+            <title>{`StarTrans - ${title.title}`}</title>
             <Captions captionTitle={t('carrierNavi')} captionDesc={t('carrierSmCaptionCR')}/>
             <section className="content">
                 <div className="flex">

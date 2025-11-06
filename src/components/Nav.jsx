@@ -43,16 +43,16 @@ export default function Nav() {
             </div>
 
             <nav className={menuOpen ? "open" : ""}>
-                <NavLink to="/Usługi" className={({ isActive }) => (isActive ? "active" : "")} onClick={resetScrollHandle}>
+                <NavLink to='Service' className={({ isActive }) => (isActive ? "active" : "")} onClick={resetScrollHandle}>
                   {t("service")}
                 </NavLink>
-                <NavLink to="/O-nas" className={({ isActive }) => (isActive ? "active" : "")} onClick={resetScrollHandle}>
+                <NavLink to="/About" className={({ isActive }) => (isActive ? "active" : "")} onClick={resetScrollHandle}>
                   {t("aboutNavi")}
                 </NavLink>
-                <NavLink to="/Kariera" className={({ isActive }) => (isActive ? "active" : "")} onClick={resetScrollHandle}>
+                <NavLink to="/Career" className={({ isActive }) => (isActive ? "active" : "")} onClick={resetScrollHandle}>
                   {t("carrierNavi")}
                 </NavLink>
-                <NavLink to="/Kontakt" className={({ isActive }) => (isActive ? "active" : "")} onClick={resetScrollHandle}>
+                <NavLink to="/Contact" className={({ isActive }) => (isActive ? "active" : "")} onClick={resetScrollHandle}>
                   {t("contactNavi")}
                 </NavLink>
 

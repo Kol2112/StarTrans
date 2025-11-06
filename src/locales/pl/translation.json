@@ -1,8 +1,11 @@
-{
+{ 
+    "mainPG": "Strona Główna",
     "service": "Usługi",
     "aboutNavi": "O firmie",
     "carrierNavi": "Kariera",
     "contactNavi": "Kontakt",
+
+
     
     "headingCaption": "Twój biznes w ruchu, nasza misja w drodze",
     "headingSmCaption": "Transport i spedycja",

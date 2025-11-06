@@ -13,12 +13,12 @@ import InfoBox from '../components/InfoBox.jsx';
 
 import '../styles/MainPage.css'
 
-export default function MainPage(){
+export default function MainPage(title){
     const {t} = useTranslation();
 
     return(
         <>
-        <title>StarTrans - Strona główna</title>
+        <title>{`StarTrans - ${title.title}`}</title>
         
         <Captions captionTitle={t("serviceCaptionMP")} captionDesc={t('serviceSmCaptionMP')}/>
       

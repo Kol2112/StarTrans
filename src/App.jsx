@@ -11,22 +11,21 @@ import Contact from './Pages/Contact.jsx';
 
 
 import './App.css';
-// import './styles/Header.scss'
 function App() {
 
   const {t} = useTranslation();
   const location = useLocation();
 
-    const getHeading = () => {
+  const getHeading = () => {
     const path = decodeURIComponent(location.pathname);
     switch (path) {
-      case '/Usługi':
+      case '/Service':
         return { headingCap: t('serviceHeadingCap'), headingSMCap: t('serviceHeadingSmCap'), background: 'secondBackground'};
-      case '/O-nas':
+      case '/About':
         return { headingCap: t('aboutHeadingCap'), headingSMCap: t('aboutHeadingSmCap'), background: 'secondBackground' };
-      case '/Kariera':
+      case '/Career':
         return { headingCap: t('carrierHeadingCap'), headingSMCap: t('carrierHeadingSmCap'), background: 'secondBackground' };
-      case '/Kontakt':
+      case '/Contact':
         return { headingCap: t('contactHeadingCap'), headingSMCap: t('contactHeadingSmCap'), background: 'secondBackground' };
       default:
         return { headingCap: t('headingCaption'), headingSMCap: t('headingSmCaption'), background: 'mainBackground'};
@@ -41,11 +40,11 @@ function App() {
     <Header headingCap={headingCap} headingSMCap={headingSMCap} bckgrnd={background}/>
     <main id='content'>
       <Routes>
-        <Route index element={<MainPage />} />
-        <Route path='Usługi' element={<Service />} />
-        <Route path='O-nas' element={<About />} />
-        <Route path='Kariera' element={<Carrier />} />
-        <Route path='Kontakt' element={<Contact />} />
+        <Route index element={<MainPage title={t('mainPG')}/>} />
+        <Route path='Service' element={<Service title={t('service')}/>} />
+        <Route path='About' element={<About title={t('aboutNavi')}/>} />
+        <Route path='Career' element={<Carrier title={t('carrierNavi')}/>} />
+        <Route path='Contact' element={<Contact title={t('contactNavi')}/>} />
       </Routes>
     </main>
     <Footer />
