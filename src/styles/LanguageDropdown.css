@@ -8,9 +8,10 @@
   align-items: center;
   gap: 4px;
   cursor: pointer;
-  color: white;
+  color: #ffffff;
   font-weight: 500;
   position: relative;
+  font-family: var(--secondFont);
 }
 
 .langBox {
@@ -18,7 +19,7 @@
   top: 100%; 
   left: 0;
   background-color: black;
-  color: white;
+  color: #ffffff;
   border-radius: 6px;
   overflow: hidden;
   display: flex;

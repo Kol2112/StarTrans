@@ -155,6 +155,9 @@
 
         & #logo{
         padding-left: 0;
+          & img{
+            width:6rem;
+          }
       }
       & .open{
         border-top: 1px solid white;
@@ -173,18 +176,8 @@
   }
 
 }
-.lang{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  cursor: pointer;
 
-  & .langBox{
-    display: block;
-    
-  }
-}
+
 
 .bckgrnd{
     background-color: rgba(0, 0, 0, 0.75);

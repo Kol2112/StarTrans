@@ -20,7 +20,7 @@
         height: 20%;
     }
     &   h2{
-            color: var(--darkThemeTextColor);
+            color: var(--ThemeTextColor);
             font-family: var(--firstFont);
             
     }

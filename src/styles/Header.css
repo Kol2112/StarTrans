@@ -16,8 +16,7 @@ header {
   box-shadow: 10px 10px 300px 300px rgba(0, 0, 0, 0.5) inset;
 
   & #motto {
-    display: 
-    flex; 
+    display: flex; 
     width: 50%; 
     margin-left: 50%; 
     margin-right: 20%; 
@@ -25,6 +24,9 @@ header {
     flex-wrap: wrap; 
     flex-direction: column; 
     align-items: flex-start;
+    font-family: var(--secondFont);
+    color: #ffffff
+  
   }
 }
 
@@ -49,4 +51,13 @@ header {
         background-attachment: scroll;
     }
     }   
+}
+
+@media(max-width: 730px){
+    header {
+
+    & #motto {
+      margin-top: 3rem;
+    }
+  }
 }
