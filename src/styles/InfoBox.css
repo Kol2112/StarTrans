@@ -24,6 +24,7 @@
     align-items: center;
     flex-wrap: nowrap;
     border-radius: 1rem;
+    box-shadow: var(--boxShadow);
     &   img{
         width: 5em;
     }
