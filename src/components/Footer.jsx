@@ -5,10 +5,10 @@ export default function Footer(){
     return(
         <footer>
             <p>{t('footerRights')}</p>
-            <p>Leżajsk, ulica</p>
+            <p>Spółdzielcza 8, 37-300 Leżajsk</p>
             <div className='contact'>
-                <p><a href='mailto:#'>mail</a></p>
-                <p><a href="tel:#">telefon</a></p>
+                <p><a href='mailto:biuro@startrans.com.pl'>biuro@startrans.com.pl</a></p>
+                <p><a href="tel:668310267">+48 668 310 267</a></p>
             </div>
         </footer>
     )

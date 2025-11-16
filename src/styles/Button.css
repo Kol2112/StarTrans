@@ -3,7 +3,7 @@ button{
     background-color: var(--buttonColor);
     border-radius: 1rem;
     border: none;
-    color: var(--ThemeTextColor);
+    color: var(--permWhite);
     margin-top: 2rem;
     padding: 1rem 0;
     font-size: larger;

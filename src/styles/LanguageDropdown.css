@@ -31,11 +31,12 @@
   z-index: 1000;
 }
 
-.langBox p {
+.lang p {
   margin: 0;
   padding: 6px 0;
   cursor: pointer;
   transition: background-color 0.2s ease;
+  color: var(--permWhite)
 }
 
 .langBox p:hover {

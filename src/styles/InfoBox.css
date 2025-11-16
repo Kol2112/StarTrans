@@ -13,8 +13,8 @@
     width: 30%;
     height: 8rem;
     margin: 0.3rem 0;
-}
 
+}
 
 .container{
     background-color: var(--secondMainColor);
@@ -24,6 +24,7 @@
     align-items: center;
     flex-wrap: nowrap;
     border-radius: 1rem;
+    overflow-wrap: break-word;
     &   img{
         width: 5em;
     }

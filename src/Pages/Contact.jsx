@@ -120,9 +120,9 @@ function handleSubmit(e) {
 
                 <div className='infoSection'>
                     <section className='contactInfo'>
-                        <InfoBox type='containerContact' img={home} desc='Leżajsk, ulica' />
-                        <InfoBox type='containerContact' img={email} desc='email@gmail.com' />
-                        <InfoBox type='containerContact' img={telephone} desc='00000000' />
+                        <InfoBox type='containerContact' img={home} desc='Spółdzielcza 8, 37-300 Leżajsk' />
+                        <InfoBox type='containerContact' img={email} desc='biuro@startrans.com.pl' />
+                        <InfoBox type='containerContact' img={telephone} desc='+48 668 310 267' />
                     </section>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34306.8244881745!2d22.400810432298666!3d50.27568616069454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cc6b74783fbf1%3A0x2e4fed9de334b27d!2sMickiewicza%2057%2C%2037-300%20Le%C5%BCajsk!5e0!3m2!1sen!2spl!4v1760615340083!5m2!1sen!2spl"

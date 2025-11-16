@@ -25,7 +25,10 @@ header {
     flex-direction: column; 
     align-items: flex-start;
     font-family: var(--secondFont);
-    color: #ffffff
+
+    & h1, p{
+      color: var(--permWhite)
+    }
   
   }
 }
