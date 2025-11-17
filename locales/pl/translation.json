@@ -1,0 +1,81 @@
+{ 
+    "mainPG": "Strona Główna",
+    "service": "Usługi",
+    "aboutNavi": "O firmie",
+    "carrierNavi": "Kariera",
+    "contactNavi": "Kontakt",
+
+
+    
+    "headingCaption": "Twój biznes w ruchu, nasza misja w drodze",
+    "headingSmCaption": "Transport i spedycja",
+    "serviceHeadingCap": "Zawsze tam, gdzie nas potrzebujesz",
+    "serviceHeadingSmCap": "Niezawodni. Elastyczni. Zawsze blisko.",
+    "aboutHeadingCap": "Poznaj nas",
+    "aboutHeadingSmCap": "Zobacz, co nas napędza.",
+    "carrierHeadingCap": "Zainteresowany współpracą?",
+    "carrierHeadingSmCap": "Czekamy na Ciebie",
+    "contactHeadingCap": "Zainteresowany?",
+    "contactHeadingSmCap": "Skontaktuj się z nami!",
+    
+
+
+
+    "serviceCaptionMP": "Usługi",
+    "serviceSmCaptionMP": "W tym się specjalizujemy",
+    "transportCaptionMP": "Transport",
+    "transportDescMP": "Oferujemy profesjonalne usługi transportowe, zapewniając szybki i bezpieczny przewóz towarów na terenie kraju i za granicą. Dzięki nowoczesnej flocie i doświadczonemu zespołowi gwarantujemy terminową dostawę i pełne wsparcie logistyczne.",
+    "spedCaptionMP": "Spedycja",
+    "spedDescMP": "Świadczymy kompleksowe usługi spedycyjne, organizując transport krajowy i międzynarodowy dopasowany do potrzeb klienta. Zajmujemy się całością procesu logistycznego, dbając o optymalne trasy, formalności i bezpieczeństwo przesyłek.",
+    "orderService": "Zamów usługę",
+    "aboutCaptionMP": "O nas",
+    "aboutSmCaptionMP": "Twoi partnerzy w logistyce",
+    "historyMP": "",
+    "chooseUsCaptionMP": "Dlaczego warto nas wybrać?",
+    "chooseUsSmCaptionMP": "To nas wyróżnia",
+    "exp": "Doświadczenie",
+    "reliable": "Niezawodność w dostarczaniu towarów",
+    "competitive": "Konkurencyjna oferta",
+    "flexService": "Elastyczna usługa",
+
+    "urServiceCaptionSV": "Nasze usługi",
+    "urServiceSmCaptionSV": "To oferujemy",
+    "transSMCaptionSV": "Bezpieczne i terminowe przewozy w kraju i za granicą",
+    "transDescSV": "Naszą specjalnością jest kompleksowa obsługa transportowa na terenie całej Polski oraz Europy. Dzięki nowoczesnej flocie pojazdów, regularnie serwisowanych i dostosowanych do różnych rodzajów ładunków, gwarantujemy pełne bezpieczeństwo i najwyższy standard przewozu. Każde zlecenie traktujemy indywidualnie – dopasowując rozwiązania do charakteru towaru, wymagań klienta oraz specyfiki trasy. Zespół naszych doświadczonych kierowców i logistyków czuwa nad każdym etapem realizacji przewozu, aby zapewnić terminowość i pełną kontrolę nad transportem. Oferujemy elastyczne formy współpracy, szybki kontakt i wsparcie na każdym etapie – od planowania, przez załadunek, aż po dostarczenie przesyłki do miejsca docelowego. Z nami Twoje towary zawsze dotrą na czas – bezpiecznie i w najlepszych warunkach. Nasze doświadczenie obejmuje zarówno transport całopojazdowy (FTL), jak i drobnicowy (LTL), co pozwala nam skutecznie obsługiwać zarówno duże przedsiębiorstwa, jak i mniejsze firmy o zróżnicowanych potrzebach logistycznych. Współpracujemy z partnerami na terenie całej Europy, co umożliwia nam realizację zleceń międzynarodowych z zachowaniem najwyższych standardów jakości i zgodności z obowiązującymi przepisami. Dbamy o to, by każdy etap przewozu przebiegał sprawnie i bez zakłóceń – od momentu przyjęcia zlecenia, poprzez monitorowanie trasy, aż po końcowe rozliczenie.",
+    "spedSMCaptionSV": "Profesjonalna organizacja transportu od załadunku po dostawę",
+    "spedDescSV": "Świadczymy kompleksowe usługi spedycyjne, zapewniając pełną obsługę logistyczną dla firm i klientów indywidualnych. Naszym celem jest to, aby każdy ładunek dotarł do miejsca przeznaczenia szybko, bezpiecznie i w najbardziej optymalny sposób. Zajmujemy się planowaniem całej trasy, doborem odpowiedniego środka transportu, organizacją niezbędnych dokumentów oraz koordynacją wszystkich etapów przewozu. Nasz zespół spedytorów dba o stały kontakt z klientem i bieżące monitorowanie przesyłki, dzięki czemu masz pewność, że Twój towar jest w dobrych rękach od momentu załadunku aż po dostarczenie do odbiorcy. Z nami zyskujesz spokój i pewność, że Twoja logistyka działa bez zakłóceń. Nasze doświadczenie w branży pozwala nam skutecznie łączyć potrzeby klientów z możliwościami rynku transportowego. Dzięki rozbudowanej sieci sprawdzonych partnerów w kraju i za granicą możemy zaoferować konkurencyjne stawki, elastyczne terminy oraz dopasowanie usług do indywidualnych oczekiwań. Organizujemy przewozy drogowe – zarówno krajowe, jak i międzynarodowe – dbając o to, by każda przesyłka dotarła na czas, niezależnie od odległości czy rodzaju ładunku. W naszej pracy stawiamy na przejrzystość, terminowość i maksymalną efektywność. Każdy etap procesu spedycyjnego jest nadzorowany przez doświadczonych specjalistów, którzy dbają o minimalizację kosztów i czasu transportu. Wykorzystujemy nowoczesne systemy informatyczne oraz narzędzia monitoringu, które pozwalają śledzić przesyłki w czasie rzeczywistym i reagować na ewentualne zmiany w planie transportowym. Dzięki temu możemy szybko dostosować się do dynamicznych warunków rynkowych i zapewnić nieprzerwany przepływ towarów.",
+    "whyUsCaptionSV": "Dlaczego my",
+    "whyUsSMCaptionSV": "To nas wyróżnia",
+    "fleet": "Nowoczesna flota",
+    "term": "Terminowość",
+    "reach": "Zasięg krajowy i międzynarodowy",
+    "cont&monitoring": "Stały kontakt i monitoring",
+    "expTeam": "Doświadczony zespół",
+    "inv": "Indywidualne podejście",
+    "servicesReqHeadingSV": "Potrzebujesz naszej usługi?",
+    "servicesReqContactSV": "Skontaktuj się z nami",
+    "contactBtn": "Kontakt",
+
+    "carrierSmCaptionCR": "Nie czekaj i dołącz do naszego zespołu",
+    "carrierDesc1": "Szukasz stabilnej pracy w dynamicznie rozwijającej się branży? U nas zyskasz nie tylko pewne zatrudnienie, ale także wsparcie zespołu, nowoczesną flotę i realne możliwości rozwoju. Oferujemy pracę w firmie, która stawia na ludzi – ich zaangażowanie, kompetencje i pasję do tego, co robią. Cenimy doświadczenie, ale równie mocno wspieramy tych, którzy dopiero rozpoczynają swoją karierę w transporcie i logistyce. Dzięki przyjaznej atmosferze oraz jasno określonym zasadom współpracy każdy może liczyć na rzetelne wdrożenie, pomoc bardziej doświadczonych kolegów i realne perspektywy awansu.",
+    "carrierDesc2": "Stawiamy na profesjonalizm, bezpieczeństwo i partnerskie relacje – zarówno z klientami, jak i pracownikami. Nasza firma to zespół ludzi, którzy wzajemnie się wspierają i dążą do wspólnego celu. Wierzymy, że sukces organizacji zaczyna się od zadowolonego pracownika, dlatego zapewniamy stabilne warunki pracy, terminowe wynagrodzenie, nowoczesne zaplecze techniczne oraz dostęp do szkoleń podnoszących kwalifikacje. Dla kierowców oferujemy komfortowe i bezpieczne pojazdy, regularnie serwisowane i dostosowane do wymogów europejskich tras.",
+    "carrierDesc3": "Razem budujemy przyszłość transportu – nowoczesnego, bezpiecznego i zorientowanego na człowieka. Dołącz do nas już dziś i przekonaj się, że praca w naszej firmie to nie tylko obowiązek, ale także satysfakcja, rozwój i poczucie przynależności do silnego, profesjonalnego zespołu.",
+    "carrierDesc4Span": "dołącz do nas już dziś!",
+    "cvReqHeading": "Osoby zainteresowane prosimy o przesyłanie CV na email.",
+    "cvReqDesc": "Prosimy o załączeniu klauzuli RODO na końcu CV:",
+    "cvReqClause": "Wyrażam zgodę na przetwarzanie danych osobowych zawartych w mojej ofercie pracy dla potrzeb niezbędnych do realizacji procesu rekrutacji prowadzonego przez StarTrans siedzibą w Leżajsku zgodnie z ustawą z dnia 29 sierpnia 1997 r. o ochronie danych osobowych (tj. Dz. U. z 2014 r. poz. 1182, 1662)",
+    "workUsCaption": "Dlaczego warto u nas pracować?",
+    "workUsSMCaption": "Poznaj korzyści, które czekają właśnie na Ciebie!",
+
+    "formCaptionFR": "Formularz kontaktowy",
+    "formSMCaptionFR": "Skorzystaj z formularza kontaktowego, żeby omówić szczegóły",
+    "formName": "Imię",
+    "formTel": "Nr tel",
+    "formDesc": "Treść",
+    "formCheckbox": "Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu kontaktowym przez StarTrans w celu udzielenia odpowiedzi na zapytanie. Oświadczam, że zapoznałem(-am) się z Polityką prywatności.",
+    "formSubBtn": "Wyślij",
+
+
+    "footerRights": "©2025 Wszelkie prawa zastrzeżone"
+
+}

@@ -8,10 +8,13 @@
   align-items: center;
   gap: 4px;
   cursor: pointer;
-  color: #ffffff;
   font-weight: 500;
   position: relative;
-  font-family: var(--secondFont);
+
+  & p{
+    font-family: var(--secondFont);
+    color: #ffffff;
+  }
 }
 
 .langBox {

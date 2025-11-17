@@ -1,0 +1,100 @@
+
+.containerMP{
+    width: 20%;
+    height: 30vh;
+}
+.containerService{
+    margin: 1rem 0;
+    width: 15%;
+    height: 20vh;
+}
+
+.containerContact{
+    width: 30%;
+    height: 8rem;
+    margin: 0.3rem 0;
+
+}
+
+.container{
+    background-color: var(--secondMainColor);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 1rem;
+<<<<<<< HEAD
+    overflow-wrap: break-word;
+=======
+    box-shadow: var(--boxShadow);
+>>>>>>> 4c7b5b7276c73393fd3db6a409423c95b73bb90b
+    &   img{
+        width: 5em;
+    }
+    &   p{
+        text-align: center;
+        font-weight: bold;
+        padding-top: 1rem;
+    }
+}
+
+
+.containerService:hover{
+    background-color: rgba(204, 204, 204, 0.07);
+    width: 20% ;
+    border: var(--border);
+}
+.containerMP:hover{
+    background-color: rgba(204, 204, 204, 0.07);
+    width: 30%;
+    border: var(--border);
+}
+.containerContact:hover{
+    background-color: rgba(204, 204, 204, 0.07);
+    border: var(--border);
+}
+
+@media (max-width: 1320px){
+    .containerContact{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .containerContact{
+        height: 6rem;
+    }
+}
+
+@media (max-width: 900px){
+    .containerService{
+        width: 30%;
+    }
+    .containerService:hover{
+        width: 35%;
+    }
+    .containerMP{
+        width: 40%;
+        height: 30vh;
+        margin: 1rem 0;
+    }
+    .containerMP:hover{
+        width: 45%;
+
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        margin: 0.5rem 0;
+        width: 100%;
+
+    }
+    .containerMP:hover, .containerService:hover{
+        width: 100%;
+    }
+}

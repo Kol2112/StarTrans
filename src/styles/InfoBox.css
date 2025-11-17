@@ -24,7 +24,11 @@
     align-items: center;
     flex-wrap: nowrap;
     border-radius: 1rem;
+<<<<<<< HEAD
     overflow-wrap: break-word;
+=======
+    box-shadow: var(--boxShadow);
+>>>>>>> 4c7b5b7276c73393fd3db6a409423c95b73bb90b
     &   img{
         width: 5em;
     }

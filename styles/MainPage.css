@@ -1,0 +1,39 @@
+
+#serviceBox{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.border{
+    border-left: solid 4px var(--buttonColor);
+    padding-left: 0.5rem;
+}
+.captionTitle{
+    color: var(--ThemeTextColor);
+    font-family: var(--firstFont);
+}
+.captionDesc{
+    color: var(--ThemeTextColor);
+    font-style: italic;
+    font-family: var(--secondFont);
+}
+
+#ContactButton{
+    margin-top:3rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    button{
+        width: 20rem;
+    }
+}
+
+@media(max-width: 900px){
+    #serviceBox{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

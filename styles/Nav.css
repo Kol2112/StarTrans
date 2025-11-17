@@ -1,0 +1,187 @@
+
+.navi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  border-radius: 1rem;
+
+  & #leftNaviSide{
+    margin-left: 1rem;
+    height: 5rem;
+    margin-top: 0.5rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+  & #logo {
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+
+    & img {
+      width: 8rem;  
+    }
+  }
+
+  & .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 1.5rem;
+    cursor: pointer;
+    z-index: 101;
+
+    & span {
+      height: 0.25rem;
+      width: 100%;
+      background: white;
+      border-radius: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    &.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    &.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+
+  & nav {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #cccccc;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 1rem;
+    transition: all 0.3s ease-in-out;
+    z-index: 99;
+
+    & a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: var(--secondFont);
+      border-bottom: 0.2rem solid transparent;
+      margin: 0.6rem 0;
+      transition: border-color 0.2s ease;
+    }
+
+    & a:hover,
+    .active {
+      border-bottom-color: var(--buttonColor);
+    }
+
+    &.open {
+      display: flex;
+      backdrop-filter: blur(6px);
+    }
+
+    & #Tooltip.mobile-only {
+      margin-top: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;;
+      flex-direction: row;
+      gap: 0.5rem;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      width: 100%;
+    }
+  }
+  
+
+  & #Tooltip.desktop-only {
+    height: 5rem;
+    margin-top: 0.5rem;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  @media (min-width: 768px) {
+    & .hamburger {
+      display: none;
+    }
+
+
+    & nav {
+      position: static;
+      display: flex !important;
+      flex-direction: row;
+      width: 60%;
+      background: none;
+      border: none;
+      backdrop-filter: none;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0;
+
+      & #Tooltip.mobile-only {
+        display: none;
+      }
+    }
+
+    & #Tooltip.desktop-only {
+      display: flex;
+    }
+  }
+
+  @media (max-width: 767px) {
+    #leftNaviSide{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        border: 0;
+        padding: 0 3rem;
+        justify-content: space-between;
+
+        & #logo{
+        padding-left: 0;
+          & img{
+            width:6rem;
+          }
+      }
+      & .open{
+        border-top: 1px solid white;
+      }
+    }
+    #Tooltip.desktop-only {
+      display: none;
+    }
+
+
+    .bckgrnd{
+      background-color: rgba(0, 0, 0, 0.75);
+      border: none;
+      border-radius:0;
+    }
+  }
+
+}
+
+
+
+.bckgrnd{
+    background-color: rgba(0, 0, 0, 0.75);
+    border: solid 3px #cccccc;
+    border-radius: 1rem;
+}
+
