@@ -7,13 +7,8 @@
 
 [data-theme="light"] {
     --ThemeTextColor: #000000;
-<<<<<<< HEAD
     --firstMainColor: rgb(215, 215, 215);
     --secondMainColor: rgb(225, 225, 225);
-=======
-    --firstMainColor: #d2d1d1;
-    --secondMainColor: #d2d1d1;
->>>>>>> 4c7b5b7276c73393fd3db6a409423c95b73bb90b
     --firstFont: 'Poppins';
     --secondFont: 'Roboto';
     --buttonColor: #07931C;

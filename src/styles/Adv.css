@@ -15,12 +15,8 @@
         flex-wrap: nowrap;
         width:30%;
         height:8rem;
-        box-shadow: var(--boxShadow);
+        border:solid white 2px
     }
-
-    /* &   .advItem:hover{
-        border: solid red 1px
-    } */
 }
 
 @media (max-width: 600px) {

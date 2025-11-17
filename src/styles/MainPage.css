@@ -19,6 +19,16 @@
     font-family: var(--secondFont);
 }
 
+h1{
+    color: var(--ThemeTextColor);
+    font-family: var(--firstFont);
+}
+
+p{
+    color: var(--ThemeTextColor);
+    font-family: var(--secondFont);
+}
+
 #ContactButton{
     margin-top:3rem;
     justify-content: center;
