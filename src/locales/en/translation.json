@@ -4,9 +4,23 @@
     "aboutNavi": "About Us",
     "carrierNavi": "Career",
     "contactNavi": "Contact",
-    
+
     "headingCaption": "Your business on the move, our mission on the road.",
     "headingSmCaption": "Transport and logistics",
+
+    "serviceHeadingCap": "Always where you need us",
+    "serviceHeadingSmCap": "Services tailored to your business",
+    "aboutHeadingCap": "Get to know us",
+    "aboutHeadingSmCap": "Who we are and where we are heading",
+    "carrierHeadingCap": "Interested in joining us?",
+    "carrierHeadingSmCap": "We’re waiting for you",
+    "contactHeadingCap": "Interested?",
+    "contactHeadingSmCap": "Get in touch with us!",
+    "HistoryCaption": "Our history",
+    "HistorySmCaption": "How it all began",
+    "OurMissionCaption": "Our mission",
+    "OurMissionSmCaption": "What matters to us",
+
     "serviceCaptionMP": "Services",
     "serviceSmCaptionMP": "This is what we specialize in",
     "transportCaptionMP": "Transport",
@@ -16,7 +30,6 @@
     "orderService": "Request a service",
     "aboutCaptionMP": "About us",
     "aboutSmCaptionMP": "Your partners in logistics",
-    "historyMP": "",
     "chooseUsCaptionMP": "Why choose us?",
     "chooseUsSmCaptionMP": "What makes us stand out",
     "exp": "Experience",
@@ -28,8 +41,8 @@
     "urServiceSmCaptionSV": "What we offer",
     "transSMCaptionSV": "Safe and on-time transport across the country and abroad",
     "transDescSV": "Our specialty is comprehensive transport service throughout Poland and Europe. With a modern fleet of vehicles, regularly serviced and adapted to various types of cargo, we ensure complete safety and the highest standard of transport. Every order is treated individually – adjusting solutions to the nature of the goods, client requirements, and route specifics. Our experienced team of drivers and logistics experts monitors every stage of delivery to ensure timeliness and full control of transport. We offer flexible cooperation models, quick communication, and support at every stage – from planning and loading to final delivery. With us, your goods always arrive on time – safely and in the best conditions.",
-    "spedSMCaptionSV": "",
-    "spedDescSV": "We provide comprehensive forwarding services, offering full logistics support for companies and individual clients. Our goal is to ensure that every shipment reaches its destination quickly, safely, and in the most optimal way. We handle route planning, selection of suitable transport means, organization of all necessary documents, and coordination of all transport stages. Our team of forwarding agents maintains constant communication with clients and monitors shipments in real time, so you can be sure that your goods are in good hands from loading to delivery. With us, you gain peace of mind and confidence that your logistics run smoothly.",
+    "spedSMCaptionSV": "Professional organization of transport from loading to delivery",
+    "spedDescSV": "We provide comprehensive forwarding services, offering full logistics support for companies and individual clients. Our goal is to ensure that every shipment reaches its destination quickly, safely, and in the most optimal way. We handle route planning, selection of suitable transport means, organization of all necessary documents, and coordination of all transport stages. Our team of forwarding agents maintains constant communication with clients and monitors shipments in real time, so you can be sure that your goods are in good hands from loading to delivery. With us, you gain peace of mind and confidence that your logistics run smoothly. Our experience allows us to match client needs with market possibilities, offering competitive rates, flexible deadlines, and tailored transport options.",
     "whyUsCaptionSV": "Why us",
     "whyUsSMCaptionSV": "What makes us stand out",
     "fleet": "Modern fleet",
@@ -42,10 +55,14 @@
     "servicesReqContactSV": "Contact us",
     "contactBtn": "Contact",
 
+    "History": "STARTRANS was founded in 2013 in Leżajsk as a local carrier handling its first domestic transport orders. Thanks to consistent development, investments in a modern fleet, and the trust of our clients, within a few years we evolved into a dynamic company operating throughout Europe. Today, our fleet consists of 40 vehicles that deliver goods for businesses from various industries every day. The year 2025 marked a milestone for us – it was then that STARTRANS officially transformed into STARTRANS Sp. z o.o., strengthening its position as a stable, modern, and professional logistics partner. From the very beginning, we aimed to build a company that not only transports goods but provides full logistics support based on the highest standards. As demand grew, we continuously expanded our operations, investing in specialized vehicles, new technologies, and the development of our team. This allowed us to enter international markets and establish ourselves as a reliable partner for businesses across multiple sectors. Over the years, we have strengthened our brand through reliability, punctuality, and a flexible approach to client needs. The transformation into STARTRANS Sp. z o.o. was a natural step enabling further growth and innovation. Today, looking back at over a decade of activity, we proudly say that we have grown from a local transport company into a professional European logistics operator – without losing sight of the values we started with.",
+    
+    "ourMission": "Our mission is to provide top-quality transport and forwarding services based on punctuality, safety, and partnership relations with clients. Every order is handled individually, ensuring logistical efficiency and transparent communication at every stage. We strive to make STARTRANS a synonym for reliability – a company that, thanks to experience, a modern fleet, and a committed team, truly supports the growth of our partners’ businesses. As we expand, we continuously invest in innovative solutions that improve workflow, minimize risks, and shorten delivery times. We believe that the strength of our company lies in its people, which is why we focus on competence, ongoing training, and a culture of cooperation based on responsibility and trust. Our goal is to build long-term relationships in which clients can rely on us regardless of the scale or direction of transport. STARTRANS aims to be the first-choice partner – a company that not only responds to market needs but anticipates them, consistently improving fleet capabilities, technology, and service quality.",
+    
     "carrierSmCaptionCR": "Don't wait – join our team",
     "carrierDesc1": "Looking for a stable job in a dynamically developing industry? With us, you’ll gain not only secure employment but also team support, a modern fleet, and real opportunities for growth.",
-    "carrierDesc2": "We value professionalism, safety, and partnership relations – both with clients and employees.",
-    "carrierDesc3": "Together, we build the future of transport –",
+    "carrierDesc2": "We value professionalism, safety, and partnership relations – both with clients and employees. We ensure stable working conditions, timely salaries, modern technical facilities, and access to training that improves qualifications.",
+    "carrierDesc3": "Together, we build the future of transport – modern, safe, and people-oriented.",
     "carrierDesc4Span": "join us today!",
     "cvReqHeading": "If you are interested, please send your CV to our email address.",
     "cvReqDesc": "Please include the GDPR clause at the end of your CV:",
@@ -53,14 +70,20 @@
     "workUsCaption": "Why work with us?",
     "workUsSMCaption": "Discover the benefits waiting for you!",
 
+    "stability": "Stable employment",
+    "Fleet": "Modern and comfortable fleet",
+    "Support": "Continuous support from dispatchers",
+    "Roz": "Career development",
+    "WorkLife": "Work-life balance",
+    "insurance": "Insurance and other benefits",
+
     "formCaptionFR": "Contact form",
     "formSMCaptionFR": "Use the contact form to discuss details",
     "formName": "Name",
     "formTel": "Phone number",
     "formDesc": "Message",
-    "formCheckbox": "Consent text for data processing",
+    "formCheckbox": "I consent to the processing of my personal data included in the contact form by StarTrans to respond to my inquiry. I declare that I have read the Privacy Policy.",
     "formSubBtn": "Send",
-
 
     "footerRights": "©2025 All rights reserved"
 }

@@ -32,12 +32,12 @@ export default function Carrier(title){
             </section>
             <Captions captionTitle={t('workUsCaption')} captionDesc={t('workUsSMCaption')}/>
             <div className="flex advantage">
-                <Adv img='' desc='Test' height='100px'/>
-                <Adv img='' desc='Test'  height='100px'/>
-                <Adv img='' desc='Test'  height='100px'/>
-                <Adv img='' desc='Test'  height='100px'/>
-                <Adv img='' desc='Test'  height='100px'/>
-                <Adv img='' desc='Test'  height='100px'/>
+                <Adv img='' desc={t('stability')} height='100px'/>
+                <Adv img='' desc={t('Fleet')}  height='100px'/>
+                <Adv img='' desc={t('Support')}  height='100px'/>
+                <Adv img='' desc={t('Roz')}  height='100px'/>
+                <Adv img='' desc={t('WorkLife')}  height='100px'/>
+                <Adv img='' desc={t('insurance')}  height='100px'/>
             </div>
         </section>
     )

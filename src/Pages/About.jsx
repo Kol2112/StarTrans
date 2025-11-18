@@ -5,8 +5,21 @@ export default function About(title){
     return(
         <>
         <title>{`StarTrans - ${title.title}`}</title>
-            <Captions captionTitle={t('Service')} captionDesc={t('Specjalizacja')}/>
-            <h2>{t('test')}</h2>
+            <section className='box marginContent'>
+                <img src={''} alt="Zdjęcie kierowcy z telefonem" />
+                <div className="descBox">
+                    <Captions captionTitle={t('HistoryCaption')} captionDesc={t('HistorySmCaption')}>Historia</Captions>
+                    <p className="desc">{t('History')}</p>
+                </div>
+            </section>
+            <section className='box marginContent'>
+                <div className="descBox">
+                    <Captions captionTitle={t('OurMissionCaption')} captionDesc={t('OurMissionSmCaption')}>Historia</Captions>
+                    <p className="desc">{t('ourMission')}</p>
+                </div>
+                <img src={''} alt="Zdjęcie kierowcy z telefonem" style={{borderRadius: '0 1rem 1rem 0'}}/>
+            </section>
+
         </>
     )
 }
