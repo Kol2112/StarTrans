@@ -5,6 +5,13 @@ import Button from '../components/Button.jsx'
 import '../styles/Carrier.css'
 
 import img from '../assets/img/aggr2.jpg'
+
+import stability from '../assets/icons/StableCR.png'
+import Support from '../assets/icons/SupportCR.png'
+import fleet from '../assets/icons/FleetCR.png'
+import growth from '../assets/icons/growthCR.png'
+import wlBalance from '../assets/icons/wlBalanceCR.png'
+import insurance from '../assets/icons/insuranceCR.png'
 export default function Carrier(title){
 
     const {t} = useTranslation();
@@ -32,12 +39,12 @@ export default function Carrier(title){
             </section>
             <Captions captionTitle={t('workUsCaption')} captionDesc={t('workUsSMCaption')}/>
             <div className="flex advantage">
-                <Adv img='' desc={t('stability')} height='100px'/>
-                <Adv img='' desc={t('Fleet')}  height='100px'/>
-                <Adv img='' desc={t('Support')}  height='100px'/>
-                <Adv img='' desc={t('Roz')}  height='100px'/>
-                <Adv img='' desc={t('WorkLife')}  height='100px'/>
-                <Adv img='' desc={t('insurance')}  height='100px'/>
+                <Adv img={stability} desc={t('stability')} height='80px'/>
+                <Adv img={fleet} desc={t('Fleet')}  height='80px'/>
+                <Adv img={Support} desc={t('Support')}  height='80px'/>
+                <Adv img={growth} desc={t('Roz')}  height='80px'/>
+                <Adv img={wlBalance} desc={t('WorkLife')}  height='80px'/>
+                <Adv img={insurance} desc={t('insurance')}  height='80px'/>
             </div>
         </section>
     )

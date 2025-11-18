@@ -1,7 +1,8 @@
 import { useTranslation } from "react-i18next";
 import transport from '../assets/icons/mainPage/fast-delivery.png'
+import transportLight from '../assets/icons/mainPage/fast-delivery_light.png'
 import sped from '../assets/icons/mainPage/worldwide-shipping.png'
-
+// import {theme} from '../components/ThemeToggler.jsx'
 import aboutPic from '../assets/img/full-shot-man-sitting-truck.jpg'
 import aboutPic2 from '../assets/img/aboutPic2.jpg'
 import quality from '../assets/icons/mainPage/quality.png';
@@ -36,6 +37,8 @@ export default function MainPage(title){
 
     return () => window.removeEventListener('resize', handleWin)
     },[])
+    
+    console.log(theme)
 
 
     return(

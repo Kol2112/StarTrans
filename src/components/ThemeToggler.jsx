@@ -1,6 +1,5 @@
 import { useState } from "react";
 import '../styles/ThemeToggler.css';
-
 export default function ThemeToggler(){
     
     const [theme, setTheme] = useState(localStorage.getItem("theme"));
