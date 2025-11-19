@@ -12,7 +12,7 @@ import Contact from './Pages/Contact.jsx';
 
 import './App.css';
 function App() {
-
+  
   const {t} = useTranslation();
   const location = useLocation();
 

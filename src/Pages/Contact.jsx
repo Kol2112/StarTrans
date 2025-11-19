@@ -5,9 +5,9 @@ import Button from '../components/Button.jsx';
 import InfoBox from '../components/InfoBox.jsx';
 import '../styles/Contact.css'
 
-import home from '../assets/icons/home.png'
-import email from '../assets/icons/email.png'
-import telephone from '../assets/icons/telephone.png'
+import home from '../assets/icons/Contact/home.png'
+import email from '../assets/icons/Contact/email.png'
+import telephone from '../assets/icons/Contact/telephone.png'
 
 export default function Contact(title) {
     const { t } = useTranslation();

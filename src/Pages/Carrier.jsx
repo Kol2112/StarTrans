@@ -6,12 +6,12 @@ import '../styles/Carrier.css'
 
 import img from '../assets/img/aggr2.jpg'
 
-import stability from '../assets/icons/StableCR.png'
-import Support from '../assets/icons/SupportCR.png'
-import fleet from '../assets/icons/FleetCR.png'
-import growth from '../assets/icons/growthCR.png'
-import wlBalance from '../assets/icons/wlBalanceCR.png'
-import insurance from '../assets/icons/insuranceCR.png'
+import stability from '../assets/icons/Carrier/StableCR.png'
+import Support from '../assets/icons/Carrier/SupportCR.png'
+import fleet from '../assets/icons/Carrier/FleetCR.png'
+import growth from '../assets/icons/Carrier/growthCR.png'
+import wlBalance from '../assets/icons/Carrier/wlBalanceCR.png'
+import insurance from '../assets/icons/Carrier/insuranceCR.png'
 export default function Carrier(title){
 
     const {t} = useTranslation();
