@@ -1,25 +1,27 @@
 import { useTranslation } from "react-i18next";
 import Captions from "../components/Captions";
-
-import mission from '../assets/img/OurMission.jpg'
 export default function About(title){
     const { t } = useTranslation();
+
+    const marginLeft = {marginLeft: '2rem'}
     return(
         <>
         <title>{`StarTrans - ${title.title}`}</title>
             <section className='box marginContent'>
-                <img src={mission} alt="Zdjęcie z łączonymi dłońmi" />
+                <span className=" aboutCmp leftSide">
+                </span>
                 <div className="descBox">
-                    <Captions captionTitle={t('HistoryCaption')} captionDesc={t('HistorySmCaption')}>Historia</Captions>
+                    <Captions captionTitle={t('HistoryCaption')} captionDesc={t('HistorySmCaption')} style={marginLeft}>Historia</Captions>
                     <p className="desc">{t('History')}</p>
                 </div>
             </section>
             <section className='box marginContent'>
                 <div className="descBox">
-                    <Captions captionTitle={t('OurMissionCaption')} captionDesc={t('OurMissionSmCaption')}>Historia</Captions>
+                    <Captions captionTitle={t('OurMissionCaption')} captionDesc={t('OurMissionSmCaption')} style={marginLeft}>Historia</Captions>
                     <p className="desc">{t('ourMission')}</p>
                 </div>
-                <img src={''} alt="Zdjęcie kierowcy z telefonem" style={{borderRadius: '0 1rem 1rem 0'}}/>
+                <span className=" missionCmp rightSide">
+                </span>
             </section>
 
         </>

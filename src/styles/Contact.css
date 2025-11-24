@@ -1,3 +1,15 @@
+#errorBox{
+    width: 100%;
+    background-color: #f8d7da;
+    color: #ff0400;
+    font-family: var(--firstFont);
+    font-weight:600;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: left;
+    margin: 1rem 0;
+    }
+
 #box{
     background-color: var(--secondMainColor);
     width: 100%;
@@ -13,6 +25,7 @@
         align-content: center;
         & .form{
             width: 50%;
+            
             & input, textarea{
                 background-color: var(--secondMainColor);
                 border: 1px solid #1D1D1D;
@@ -21,6 +34,7 @@
                 width: calc(100% / 3.5);
                 padding: 1rem;
                 margin: 0.4rem;
+                box-shadow: 0 0.2rem 5px rgba(0, 0, 0, 0.6);
             }
             & .descInpt{
                 margin: 0 0.4rem;

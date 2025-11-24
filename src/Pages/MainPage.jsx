@@ -3,8 +3,6 @@ import transport from '../assets/icons/mainPage/fast-delivery.png'
 import transportLight from '../assets/icons/mainPage/fast-delivery_light.png'
 import sped from '../assets/icons/mainPage/worldwide-shipping.png'
 import spedLight from '../assets/icons/mainPage/worldwide-shipping_light.png'
-import aboutPic from '../assets/img/full-shot-man-sitting-truck.jpg'
-import aboutPic2 from '../assets/img/aboutPic2.jpg'
 import quality from '../assets/icons/mainPage/quality.png';
 import qualityLight from '../assets/icons/mainPage/quality_light.png';
 
@@ -24,7 +22,6 @@ import {useEffect, useState } from "react";
 
 
 export default function MainPage(title){
-    const [pic, setPic] = useState(aboutPic)
     const {t} = useTranslation();
     
     const ob ={
@@ -43,8 +40,8 @@ export default function MainPage(title){
       investHandler: investLight,
       flexyHandler: flexyLight,
     }
-    const root = document.documentElement.getAttribute('data-theme')
-    const [icon, setIcon] = useState(root == 'dark' ? ob : obLight);
+    const doc = document.documentElement.getAttribute('data-theme')
+    const [icon, setIcon] = useState(doc == 'dark' ? ob : obLight);
 
     useEffect(()=>{
       const root = document.documentElement;
@@ -57,22 +54,7 @@ export default function MainPage(title){
  obs.observe(root, { attributes: true });
 
 
-      function handleWin(){
-      if(window.innerWidth <= 900){
-        setPic(aboutPic2)
-      }
-      else if(window.innerWidth > 900){
-        setPic(aboutPic)
-      }
-    
-    }
-    handleWin();
-
-
-    window.addEventListener('resize', handleWin)
-
     return () => {
-      window.removeEventListener('resize', handleWin)
       obs.disconnect()
     }
 
@@ -93,8 +75,10 @@ export default function MainPage(title){
       </div>
       <Captions captionTitle={t('aboutCaptionMP')} captionDesc={t('aboutSmCaptionMP')}/>
       <section className='box marginContent'>
-        <img src={pic} alt="Zdjęcie kierowcy z telefonem" />
-        <p className="desc">{t('transDescSV')}</p>
+        <span className="MPAbout leftSide"></span>
+        <div className="descBox">
+          <p className="desc">{t('transDescSV')}</p>
+        </div>
       </section>
       <Captions captionTitle={t('chooseUsCaptionMP')} captionDesc={t('chooseUsSmCaptionMP')}/>
       <section className='infoBox marginContent'>

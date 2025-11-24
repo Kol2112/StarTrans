@@ -4,11 +4,6 @@ import Captions from "../components/Captions.jsx"
 import InfoBox from '../components/InfoBox.jsx';
 import Button from '../components/Button.jsx'
 
-import sup from '../assets/img/supply-chain-representation-still-life.jpg'
-import secondImg from '../assets/img/top-view-delivery-truck-with-copy-space.jpg'
-
-
-
 import truck from '../assets/icons/Service/truck.png'
 import deadline from '../assets/icons/Service/deadline.png'
 import radar from '../assets/icons/Service/radar.png'
@@ -41,16 +36,16 @@ export default function Service(title){
           ideaState: ideaLight,
           ratingState: ratingLight
         }
-        const root = document.documentElement.getAttribute('data-theme')
-        const [icon, setIcon] = useState(root == 'dark' ? icons : iconsLight)
+        const doc = document.documentElement.getAttribute('data-theme')
+        const [icon, setIcon] = useState(doc == 'dark' ? icons : iconsLight)
 
     useEffect(()=>{
-        const test = document.documentElement
+        const root = document.documentElement
         const obs = new MutationObserver(()=>{
-            // console.log(root);
-            setIcon(root == 'dark' ? icons : iconsLight);
+            const theme = root.getAttribute('data-theme')
+            setIcon(theme == 'dark' ? icons : iconsLight);
         })
-        obs.observe(test, {attributes: true});
+        obs.observe(root, {attributes: true});
     
         return ()=>obs.disconnect()
     },[])
@@ -60,7 +55,7 @@ export default function Service(title){
             <title>{`StarTrans - ${title.title}`}</title>
             <Captions captionTitle={t("urServiceCaptionSV")} captionDesc={t('urServiceSmCaptionSV')}/>
             <section className='box marginContent'>
-                <img src={sup} alt="Zdjęcie kierowcy z telefonem" />
+                <span class='transService leftSide'></span>
                 <div className="descBox">
                     <Captions captionTitle={'Transport'} captionDesc={t('transSMCaptionSV')} style={marginLeft}>Historia</Captions>
                     <p className="desc">{t('transDescSV')}</p>
@@ -71,17 +66,17 @@ export default function Service(title){
                     <Captions captionTitle={t('spedCaptionMP')} captionDesc={t('spedSMCaptionSV')} style={marginLeft}>Historia</Captions>
                     <p className="desc">{t('spedDescSV')}</p>
                 </div>
-                <img src={secondImg} alt="Zdjęcie kierowcy z telefonem" style={{borderRadius: '0 1rem 1rem 0'}}/>
+                <span class='secondImgService rightSide'></span>
             </section>
 
             <Captions captionTitle={t('whyUsCaptionSV')} captionDesc={t('whyUsSMCaptionSV')}/>
             <div className="infoBox marginContent">
                 <InfoBox img={icon['truckState']} desc={t('fleet')} type={'containerService'} />     
-                <InfoBox img={deadline} desc={t('term')} type={'containerService'} />     
-                <InfoBox img={radar} desc={t('reach')} type={'containerService'} />     
-                <InfoBox img={monitoring} desc={t('cont&monitoring')} type={'containerService'} />     
-                <InfoBox img={rating} desc={t('expTeam')} type={'containerService'} />     
-                <InfoBox img={idea} desc={t('inv')} type={'containerService'} />     
+                <InfoBox img={icon['deadlineState']} desc={t('term')} type={'containerService'} />     
+                <InfoBox img={icon['radarState']} desc={t('reach')} type={'containerService'} />     
+                <InfoBox img={icon['monitoringState']} desc={t('cont&monitoring')} type={'containerService'} />     
+                <InfoBox img={icon['ratingState']} desc={t('expTeam')} type={'containerService'} />     
+                <InfoBox img={icon['ideaState']} desc={t('inv')} type={'containerService'} />     
             </div>
             <section className="flex" id='ContactButton'>
                 <h1>{t('servicesReqHeadingSV')}</h1>

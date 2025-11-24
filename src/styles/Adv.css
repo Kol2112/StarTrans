@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     &   .advItem{
         background-color: var(--secondMainColor);
+        box-shadow: 0 0.2rem 10px rgba(0, 0, 0, 0.6);
         border-radius: 1rem;
         display: flex;
         flex-direction: row;
@@ -15,7 +16,6 @@
         flex-wrap: nowrap;
         width:30%;
         height:8rem;
-        border:solid white 2px
     }
 }
 
