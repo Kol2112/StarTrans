@@ -1,10 +1,10 @@
 
 .mainBackground {
-  background: url('../assets/img/gabriel-santos-GBVDilE8yvI-unsplash.jpg') center 60% / cover no-repeat border-box;
+  background: url('../assets/img/Header/headerMP.webp') center 60% / cover no-repeat border-box;
 }
 
 .secondBackground {
-  background: url('../assets/img/group-trucks-parked-row.jpg') center 60% / cover no-repeat border-box;
+  background: url('../assets/img/Header/headerRest.webp') center 60% / cover no-repeat border-box;
 }
 
 header {

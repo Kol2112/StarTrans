@@ -39,7 +39,7 @@ body{
     border-radius: 1rem;
     box-shadow: var(--boxShadow);
     & .MPAbout{
-    background-image: url('./assets//img/full-shot-man-sitting-truck.jpg');
+    background-image: url('./assets//img/MP/aboutMP.webp');
     
         background-size: cover;
     }
@@ -54,12 +54,12 @@ body{
         background-position: center;
     }
     & .aboutCmp{
-        background-image: url('./assets/img/OurMission.jpg');
+        background-image: url('./assets/img/About/OurHis.webp');
         background-size: cover;
         background-position: center;
     }
     & .missionCmp{
-        background-image: url('./assets/img/About/Mission.png');
+        background-image: url('./assets/img/About/ourMission.webp');
         background-size: cover;
         background-position: center;
     }

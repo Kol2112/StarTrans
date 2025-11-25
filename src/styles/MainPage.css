@@ -9,7 +9,7 @@
     border-left: solid 4px var(--buttonColor);
     padding-left: 0.5rem;
 }
-.captionTitle{
+/* .captionTitle{
     color: var(--ThemeTextColor);
     font-family: var(--firstFont);
 }
@@ -17,9 +17,9 @@
     color: var(--ThemeTextColor);
     font-style: italic;
     font-family: var(--secondFont);
-}
+} */
 
-h1{
+/* h1{
     color: var(--ThemeTextColor);
     font-family: var(--firstFont);
 }
@@ -27,7 +27,7 @@ h1{
 p{
     color: var(--ThemeTextColor);
     font-family: var(--secondFont);
-}
+} */
 
 #ContactButton{
     margin-top:3rem;

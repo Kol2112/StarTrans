@@ -1,9 +1,4 @@
 <?php
-// server.php
-header("Access-Control-Allow-Origin: http://localhost:5173");
-header("Access-Control-Allow-Headers: Content-Type");
-header("Content-Type: application/json");
-
 require __DIR__ . '/vendor/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -19,10 +14,19 @@ $EMAIL_RECEIVER = $_ENV['EMAIL_RECEIVER'] ?? '';
 $RECAPTCHA_SECRET = $_ENV['RECAPTCHA_SECRET'] ?? '';
 $ALLOWED_ORIGIN = $_ENV['ALLOWED_ORIGIN'] ?? 'http://localhost:5173';
 
-// Ustaw nagłówek CORS dynamicznie (opcjonalnie)
-header("Access-Control-Allow-Origin: " . $ALLOWED_ORIGIN);
+// Nagłówki CORS
+header("Access-Control-Allow-Origin: $ALLOWED_ORIGIN");
+header("Access-Control-Allow-Headers: Content-Type");
+header("Access-Control-Allow-Methods: POST, OPTIONS");
+header("Content-Type: application/json");
 
-// Weryfikacja reCAPTCHA v3
+// Obsługa preflight (OPTIONS)
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
+
+// Funkcja do weryfikacji reCAPTCHA
 function verify_recaptcha($token, $secret)
 {
     $url = "https://www.google.com/recaptcha/api/siteverify";
@@ -55,6 +59,7 @@ if (!$input) {
     exit;
 }
 
+// Weryfikacja reCAPTCHA
 $recaptchaToken = $input['recaptchaToken'] ?? null;
 if (!$recaptchaToken || !verify_recaptcha($recaptchaToken, $RECAPTCHA_SECRET)) {
     http_response_code(400);
@@ -62,21 +67,23 @@ if (!$recaptchaToken || !verify_recaptcha($recaptchaToken, $RECAPTCHA_SECRET)) {
     exit;
 }
 
+// Pobranie danych formularza
 $name = $input['name'] ?? 'Brak';
 $email = $input['email'] ?? 'Brak';
 $tel = $input['tel'] ?? 'Brak';
 $desc = $input['desc'] ?? 'Brak';
 
-// (Opcjonalnie) Prosta walidacja po stronie serwera
+// Prosta walidacja e-mail
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
     echo json_encode(["success" => false, "error" => "Nieprawidłowy format e-mail"]);
     exit;
 }
 
+// Wysyłka maila
 $mail = new PHPMailer(true);
+$mail->CharSet = 'UTF-8';
 try {
-    // Konfiguracja SMTP
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
@@ -92,8 +99,8 @@ try {
     $mail->Subject = "📩 Wiadomość z formularza kontaktowego od {$name}";
     $mail->Body = "
 Imię: {$name}
-E-mail nadawcy: {$email}
-Telefon: {$tel}
+E-mail: {$email}
+Telefon: {$tel} 
 
 Treść wiadomości:
 {$desc}

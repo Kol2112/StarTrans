@@ -11,13 +11,13 @@ export default function About(title){
                 <span className=" aboutCmp leftSide">
                 </span>
                 <div className="descBox">
-                    <Captions captionTitle={t('HistoryCaption')} captionDesc={t('HistorySmCaption')} style={marginLeft}>Historia</Captions>
+                    <Captions captionTitle={t('HistoryCaption')} captionDesc={t('HistorySmCaption')} style={marginLeft}></Captions>
                     <p className="desc">{t('History')}</p>
                 </div>
             </section>
             <section className='box marginContent'>
                 <div className="descBox">
-                    <Captions captionTitle={t('OurMissionCaption')} captionDesc={t('OurMissionSmCaption')} style={marginLeft}>Historia</Captions>
+                    <Captions captionTitle={t('OurMissionCaption')} captionDesc={t('OurMissionSmCaption')} style={marginLeft}></Captions>
                     <p className="desc">{t('ourMission')}</p>
                 </div>
                 <span className=" missionCmp rightSide">
