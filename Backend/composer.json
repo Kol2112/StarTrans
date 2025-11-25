@@ -1,0 +1,13 @@
+{
+    "name": "admin/backend",
+    "authors": [
+        {
+            "name": "Kamil",
+            "email": "kolarz.kamil21@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^7.0",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
