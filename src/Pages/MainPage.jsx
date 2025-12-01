@@ -17,6 +17,7 @@ import Captions from '../components/Captions.jsx'
 import ServiceBox from '../components/ServiceBox.jsx'
 import InfoBox from '../components/InfoBox.jsx';
 
+import test from '../assets/logo/Gemini_Generated_Image_tyj0t5tyj0t5tyj0.png'
 import '../styles/MainPage.css'
 import {useEffect, useState } from "react";
 
@@ -67,6 +68,7 @@ export default function MainPage(title){
 
         <title>{`StarTrans - ${title.title}`}</title>
         
+        <img src={test} alt='dd' />
         <Captions captionTitle={t("serviceCaptionMP")} captionDesc={t('serviceSmCaptionMP')}/>
       
       <div id='serviceBox'>

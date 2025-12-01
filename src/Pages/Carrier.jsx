@@ -5,7 +5,7 @@ import Adv from "../components/Adv.jsx";
 import Button from '../components/Button.jsx'
 import '../styles/Carrier.css'
 
-import img from '../assets/img/aggr2.jpg'
+import img from '../assets/img/aggr2.webp'
 
 import stability from '../assets/icons/Carrier/StableCR.png'
 import Support from '../assets/icons/Carrier/SupportCR.png'
