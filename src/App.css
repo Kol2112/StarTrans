@@ -39,17 +39,17 @@ body{
     border-radius: 1rem;
     box-shadow: var(--boxShadow);
     & .MPAbout{
-    background-image: url('./assets//img/MP/aboutMP.webp');
+    background-image: url('./assets/img/MP/aboutMP.webp');
     
         background-size: cover;
     }
     & .transService{
-        background-image: url('./assets/img/supply-chain-representation-still-life.jpg');
+        background-image: url('./assets/img/Service/Transport.webp');
         background-size: cover;
         background-position: center;
     }
     & .secondImgService{
-        background-image: url('./assets/img/top-view-delivery-truck-with-copy-space.jpg');
+        background-image: url('./assets/img/Service/Forward.webp');
         background-size: cover;
         background-position: center;
     }

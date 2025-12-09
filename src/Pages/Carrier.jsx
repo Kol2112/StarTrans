@@ -64,8 +64,7 @@ export default function Carrier(title){
                         <p style={{marginTop: '1rem'}}>{t('carrierDesc3')}</p>
                         <a href="https://www.wp.pl" className="btn"><Button text="Dołącz do nas!" style={'btnCnt'} /></a>
                     </div>
-                    <img src=
-                    {img} alt="Zdjęcie podania rąk" />
+                    <img src={img} alt="Zdjęcie podania rąk" />
                 </div>
                 <div className="CV">
                     <h2>{t('cvReqHeading')}</h2>

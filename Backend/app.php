@@ -4,52 +4,57 @@ require __DIR__ . '/vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Wczytanie .env
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+$EMAIL_USER = 'nspkpl2@gmail.com';
+$EMAIL_PASS = "wbxu sxaq arun hzrr";
+$EMAIL_RECEIVER = 'biuro@startrans.com.pl';
+$RECAPTCHA_SECRET = '6Le5cv8rAAAAAO_5K53Iv5LII7LGhKIYPPYWO6lO';
+$ALLOWED_ORIGIN = 'http://startrans.com.pl';
 
-$EMAIL_USER = $_ENV['EMAIL_USER'] ?? '';
-$EMAIL_PASS = $_ENV['EMAIL_PASS'] ?? '';
-$EMAIL_RECEIVER = $_ENV['EMAIL_RECEIVER'] ?? '';
-$RECAPTCHA_SECRET = $_ENV['RECAPTCHA_SECRET'] ?? '';
-$ALLOWED_ORIGIN = $_ENV['ALLOWED_ORIGIN'] ?? 'http://localhost:5173';
-
-// Nagłówki CORS
 header("Access-Control-Allow-Origin: $ALLOWED_ORIGIN");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Content-Type: application/json");
 
-// Obsługa preflight (OPTIONS)
 if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
     exit;
 }
 
-// Funkcja do weryfikacji reCAPTCHA
 function verify_recaptcha($token, $secret)
 {
     $url = "https://www.google.com/recaptcha/api/siteverify";
-    $data = http_build_query([
+    $data = [
         "secret" => $secret,
         "response" => $token
-    ]);
-    $options = [
-        "http" => [
-            "method" => "POST",
-            "header" => "Content-Type: application/x-www-form-urlencoded\r\n",
-            "content" => $data,
-            "timeout" => 10
-        ]
     ];
-    $context = stream_context_create($options);
-    $result = @file_get_contents($url, false, $context);
-    if (!$result) return false;
+
+    $ch = curl_init();
+    
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_POST, 1);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, true); 
+    
+    $result = curl_exec($ch);
+    $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    
+    if (curl_errno($ch)) {
+        error_log('Błąd cURL reCAPTCHA: ' . curl_error($ch));
+        curl_close($ch);
+        return false;
+    }
+    
+    curl_close($ch);
+
+    if ($http_code !== 200 || !$result) {
+        return false;
+    }
+
     $resp = json_decode($result, true);
     return isset($resp['success'], $resp['score']) && $resp['success'] === true && $resp['score'] > 0.5;
 }
 
-// Odczyt JSON z requestu
 $raw = file_get_contents("php://input");
 $input = json_decode($raw, true);
 
@@ -59,28 +64,24 @@ if (!$input) {
     exit;
 }
 
-// Weryfikacja reCAPTCHA
 $recaptchaToken = $input['recaptchaToken'] ?? null;
 if (!$recaptchaToken || !verify_recaptcha($recaptchaToken, $RECAPTCHA_SECRET)) {
     http_response_code(400);
-    echo json_encode(["success" => false, "error" => "Niepoprawna weryfikacja reCAPTCHA"]);
+    echo json_encode(["success" => false, "error" => "Niepoprawna weryfikacja reCAPTCHA (błąd weryfikacji lub niski wynik)"]);
     exit;
 }
 
-// Pobranie danych formularza
 $name = $input['name'] ?? 'Brak';
 $email = $input['email'] ?? 'Brak';
 $tel = $input['tel'] ?? 'Brak';
 $desc = $input['desc'] ?? 'Brak';
 
-// Prosta walidacja e-mail
 if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
     echo json_encode(["success" => false, "error" => "Nieprawidłowy format e-mail"]);
     exit;
 }
 
-// Wysyłka maila
 $mail = new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 try {
@@ -110,5 +111,5 @@ Treść wiadomości:
     echo json_encode(["success" => true, "message" => "Wiadomość wysłana pomyślnie!"]);
 } catch (Exception $e) {
     http_response_code(500);
-    echo json_encode(["success" => false, "error" => $mail->ErrorInfo ?: $e->getMessage()]);
+    echo json_encode(["success" => false, "error" => "Błąd wysyłania: " . ($mail->ErrorInfo ?: $e->getMessage())]);
 }

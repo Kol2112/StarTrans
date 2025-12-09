@@ -125,7 +125,7 @@ export default function Contact(title) {
                 window.grecaptcha.execute("6Le5cv8rAAAAABU9QjGyC0d2mkaOAgzehxLKyW6P", { action: "submit" }) 
                 .then((token) => { 
                     const payload = { name: formData.name, email: formData.email, tel: formData.tel, desc: formData.desc, recaptchaToken: token }; 
-                    fetch("http://localhost:5000/send_mail", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }) 
+                    fetch("http://startrans.com.pl/Backend/app.php", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }) 
                     .then((res) => res.json()) 
                     .then((data) => { 
                         if (data.success) { 
@@ -177,7 +177,7 @@ export default function Contact(title) {
                             <InfoBox type='containerContact' img={icon['telephoneState']} desc='+48 668 310 267' />
                         </section>
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34306.8244881745!2d22.400810432298666!3d50.27568616069454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cc6b74783fbf1%3A0x2e4fed9de334b27d!2sMickiewicza%2057%2C%2037-300%20Le%C5%BCajsk!5e0!3m2!1sen!2spl!4v1760615340083!5m2!1sen!2spl"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1275.250677421601!2d22.420737748147566!3d50.26389677989146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cc6bbd226dc8d%3A0x369cf011a9c623e8!2zU3DDs8WCZHppZWxjemEgOCwgMzctMzAwIExlxbxhanNr!5e0!3m2!1sen!2spl!4v1765300014137!5m2!1sen!2spl"
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
@@ -186,5 +186,7 @@ export default function Contact(title) {
                 </section>
             </section>
         </>
+        
+        
     )
 }
