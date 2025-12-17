@@ -125,7 +125,7 @@ export default function Contact(title) {
                 window.grecaptcha.execute("6Le5cv8rAAAAABU9QjGyC0d2mkaOAgzehxLKyW6P", { action: "submit" }) 
                 .then((token) => { 
                     const payload = { name: formData.name, email: formData.email, tel: formData.tel, desc: formData.desc, recaptchaToken: token }; 
-                    fetch("http://startrans.com.pl/Backend/app.php", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }) 
+                    fetch("https://startrans.com.pl/Backend/app.php", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) }) 
                     .then((res) => res.json()) 
                     .then((data) => { 
                         if (data.success) { 
