@@ -8,7 +8,7 @@ $EMAIL_USER = 'nspkpl2@gmail.com';
 $EMAIL_PASS = "wbxu sxaq arun hzrr";
 $EMAIL_RECEIVER = 'biuro@startrans.com.pl';
 $RECAPTCHA_SECRET = '6Le5cv8rAAAAAO_5K53Iv5LII7LGhKIYPPYWO6lO';
-$ALLOWED_ORIGIN = 'http://startrans.com.pl';
+$ALLOWED_ORIGIN = 'https://startrans.com.pl';
 
 header("Access-Control-Allow-Origin: $ALLOWED_ORIGIN");
 header("Access-Control-Allow-Headers: Content-Type");
